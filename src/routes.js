@@ -9,11 +9,11 @@ import Register from './Components/Register/Register';
 
 export default (
     <Switch>
-        <Route exact path='/' componenet={Login} />
-        <Route path='/register' componenet={Register} />
-        <Route path='/party/:partyid' componenet={Party} />
-        <Route path='/contact' componenet={Contact} />
-        <Route path='/account/:userid' componenet={Account} />
-        <Route render={() => <Redirect to= '/'/>} />
+        <Route exact path="/" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/party/:partyid" component={Party} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/account/:userid" component={Account} />
+        <Route render={() => <Redirect to= "/"/>} />
     </Switch>
 )

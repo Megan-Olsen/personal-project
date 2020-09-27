@@ -1,21 +1,15 @@
 import React from 'react';
 import './App.css';
-import Account from './Components/Account/Account';
-import Contact from './Components/Contact/Contact';
-import Login from './Components/Login/Login';
-import Party from './Components/Party/Party';
-import Register from './Components/Register/Register';
+import { withRouter } from 'react-router-dom';
+import routes from './routes';
+
 
 function App() {
   return (
     <div className="App">
-     <Account/>
-     <Contact/>
-     <Login/>
-     <Party/>
-     <Register/>
+     { routes }
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
