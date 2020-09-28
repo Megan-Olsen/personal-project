@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Componenet} from 'react';
 
 
-const Register = () => {
+class Register extends Component {
 
+
+    render(){
     return(
         <div>
             <p>Register</p>
@@ -12,6 +14,6 @@ const Register = () => {
 
 
         </div>
-    )
+    )}
 }
 export default Register;
