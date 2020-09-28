@@ -56,7 +56,7 @@ class Register extends Component {
                     </div>
                     <div className="linkto">
                         <span>Learn more about us or ask your questions </span>
-                        <Link classname="redirect" to="/contactus">here</Link><br/>
+                        <Link classname="redirect" to="/contact">here</Link><br/>
                         <span>Already have an account?</span>
                         <Link className="redirect" to="/">
                             Log In
