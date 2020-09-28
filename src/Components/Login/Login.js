@@ -50,7 +50,7 @@ class Login extends Component {
                     </div>
                     <div className="linkto">
                         <span>Learn more about us or ask your questions </span>
-                        <Link classname="redirect" to="/contact">here</Link><br/>
+                        <Link className="redirect" to="/contact">here</Link><br/>
                         <span>Need to make an account? Register </span>
                         <Link className="redirect" to="/register">
                             here

@@ -5,10 +5,10 @@ import { logoutUser } from '../../ducks/authReducer'
 import { connect } from 'react-redux';
 
 class Nav extends Component {
+    
     handleLogout = (e) => {
         axios.delete('/api/auth/logout').then(() => {
             this.props.logoutUser()
-
         })
     }
 
