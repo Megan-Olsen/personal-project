@@ -54,10 +54,12 @@ class Register extends Component {
                             this.handleRegister()
                         }} className="register-button">Register</button>
                     </div>
-                    <div className="linktologin">
-                        <span>Already have an account? Login </span>
+                    <div className="linkto">
+                        <span>Learn more about us or ask your questions </span>
+                        <Link classname="redirect" to="/contactus">here</Link><br/>
+                        <span>Already have an account?</span>
                         <Link className="redirect" to="/">
-                            here
+                            Log In
                         </Link>
                     </div>
                 </div>
