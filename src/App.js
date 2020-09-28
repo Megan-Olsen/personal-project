@@ -1,5 +1,4 @@
 import React from 'react';
-import './test.sass';
 import './App.css';
 import { withRouter } from 'react-router-dom';
 import routes from './routes';

@@ -31,11 +31,11 @@ module.exports = {
         if(!existingUser) {
             return res.status(404).send('User not found, please log in')
         }
-        const isAuthenticated = bcrypt.compareSync(password, existingUser.hash)
+        const isAuthenticated = bcrypt.compareSync(password, existingUser.password)
         if (!isAuthenticated){
             return res.status(403).send('Incorrect email or password')
         }
-        delete existingUser.hash
+        delete existingUser.password
 
         req.session.user = existingUser
 
@@ -43,7 +43,7 @@ module.exports = {
     },
     logout: (req, res) => {
         req.session.destroy()
-        req.sendStatus(200)
+        res.sendStatus(200)
     },
     getUser: (req, res) => {
         if (req.session.user) {
