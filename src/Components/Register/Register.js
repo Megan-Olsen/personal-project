@@ -45,6 +45,7 @@ class Register extends Component {
                                 <p>Email:</p>
                                 <input name="email" type="email" onChange={(e) => { this.handleInput(e)}}/>
                             </label>
+                            
                             <label>
                                 <p>Password:</p>
                                 <input type="password" maxLength="20" name="password" onChange={(e) => { this.handleInput(e)}}/>
