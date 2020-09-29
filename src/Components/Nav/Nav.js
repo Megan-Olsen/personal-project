@@ -1,13 +1,23 @@
 import axios from 'axios';
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import { logoutUser } from '../../ducks/authReducer'
+import {Link, withRouter} from 'react-router-dom';
+import { logoutUser, getUser } from '../../ducks/authReducer'
 import { connect } from 'react-redux';
 
 class Nav extends Component {
     
+    componentDidMount(){
+        if (!this.props.isLoggedIn) {
+            this.props.getUser().catch((err) => {
+                this.props.history.push('/')
+            })
+        }
+        this.props.getUser()
+    }
+
+
     handleLogout = (e) => {
-        axios.delete('/api/auth/logout').then(() => {
+        axios.post('/api/auth/logout').then(() => {
             this.props.logoutUser()
         })
     }
@@ -33,4 +43,4 @@ class Nav extends Component {
 
 const mapStateToProps = (state) => state
 
-export default connect(mapStateToProps, {logoutUser})(Nav);
+export default withRouter(connect(mapStateToProps, {logoutUser, getUser})(Nav));

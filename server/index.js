@@ -10,8 +10,7 @@ const app = express()
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env
 
 app.use(express.json());
-app.use(
-    session({
+app.use(session({
         secret: SESSION_SECRET,
         resave: false,
         saveUninitialized: true,
@@ -24,7 +23,7 @@ app.use(
 //authendpoints
 app.post('/api/auth/register', authCtrl.register)
 app.post('/api/auth/login', authCtrl.login)
-app.delete('/api/auth/logout', authCtrl.logout)
+app.post('/api/auth/logout', authCtrl.logout)
 app.get('/api/auth/user', authCtrl.getUser)
 
 
