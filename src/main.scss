@@ -33,11 +33,12 @@ $color6: #a16b25;
     text-align: left;
     background-color: $color6;
     opacity: 75%;
-    color: $color1;
+    color: $color2;
     flex-direction: row;
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .nav-header h1 {
     font-size: 6vh;
@@ -48,8 +49,17 @@ $color6: #a16b25;
     width: 5%;
     text-transform: uppercase;
   }
-  
-
+  .navbuttons{
+    display: flex;
+    margin-right: 2vw;
+    color: $color6;
+  }
+  .button {
+    color: $color6;
+    border: none;
+    background-color: $color5;
+    margin: 2px;
+  }
 
 
 

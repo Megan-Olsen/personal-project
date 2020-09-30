@@ -30,10 +30,10 @@ class Nav extends Component {
                 <h1>The Gloomhaven Codex</h1>
                 <h3>{username}</h3>
                 <div className="navbuttons">
-                    <Link to={`/account/${userid}`}><button>Account/Parties</button></Link>
-                    <Link to="/contact"><button>Contact Us</button></Link>
+                    <Link to={`/account/${userid}`}><button className="button">Account/Parties</button></Link>
+                    <Link to="/contact"><button className="button">Contact Us</button></Link>
                     <Link to="/">
-                        <button onClick={() => { this.handleLogout()}}>Logout</button>
+                        <button onClick={() => { this.handleLogout()}} className="button">Logout</button>
                     </Link>
                 </div>
             </div>
