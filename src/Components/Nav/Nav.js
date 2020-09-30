@@ -26,7 +26,7 @@ class Nav extends Component {
         console.log(this.props)
         const { username, userid } = this.props.auth.user
         return(
-            <nav className="nav-header">
+            <div className="nav-header">
                 <h1>The Gloomhaven Codex</h1>
                 <h3>{username}</h3>
                 <div className="navbuttons">
@@ -36,7 +36,7 @@ class Nav extends Component {
                         <button onClick={() => { this.handleLogout()}}>Logout</button>
                     </Link>
                 </div>
-            </nav>
+            </div>
         )   
     }
 }

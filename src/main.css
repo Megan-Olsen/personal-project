@@ -8,15 +8,50 @@
 .App {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   height: 100vh;
   width: 100vw;
   font-family: "Ink Free";
-  background-image: url("https://i.pinimg.com/originals/69/51/4c/69514c343be0bc939c95b30a54489ffe.jpg");
+  background-image: url("https://cdn.discordapp.com/attachments/740285624422236220/760901227067211866/cartoon-style-wood-texture_1110-882.png");
   background-position: center;
-  background-repeat: no-repeat;
-  background-height: 100%;
-  background-width: 100%;
-  background-size: cover;
+  background-repeat: repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-header {
+  width: 100%;
+  height: 10%;
+  text-align: left;
+  background-color: #a16b25;
+  opacity: 75%;
+  color: #385132;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-header h1 {
+  font-size: 6vh;
+  width: 50%;
+  padding: 2vh;
+}
+
+.nav-header h3 {
+  width: 5%;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,23 +1,70 @@
 @import url(//db.onlinewebfonts.com/c/0801c08e5412f54e4b4e9ad146d83a12?family=Ink+Free);
 @font-face {font-family: "Ink Free"; src: url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.eot"); src: url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.woff") format("woff"), url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0801c08e5412f54e4b4e9ad146d83a12.svg#Ink Free") format("svg"); }
-@mixin background($imgpath,$position: center, $repeat: no-repeat){
+@mixin background($imgpath,$position: center, $repeat: repeat){
   background: {
     image: url($imgpath);
     position: $position;
     repeat: $repeat;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
   }
 }
+$color1:#385132;
+$color2: #243624;
+$color3: #6b4f38;
+$color4: #3c291c;
+$color5: #2d1e10;
+$color6: #a16b25;
+
+
 .App {
   box-sizing: border-box;
+  display: flex;
     text-align: center;
     height: 100vh;
     width: 100vw;
     font-family: "Ink Free";
-    @include background("https://i.pinimg.com/originals/69/51/4c/69514c343be0bc939c95b30a54489ffe.jpg");
-    background-size: cover;
+    @include background("https://cdn.discordapp.com/attachments/740285624422236220/760901227067211866/cartoon-style-wood-texture_1110-882.png");
+    flex-direction: column;
   }
+  .nav-header {
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    background-color: $color6;
+    opacity: 75%;
+    color: $color1;
+    flex-direction: row;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  .nav-header h1 {
+    font-size: 6vh;
+    width: 50%;
+    padding: 2vh;
+  }
+  .nav-header h3 {
+    width: 5%;
+    text-transform: uppercase;
+  }
+  
+
+
+
+
+
+
+
+
+
+  // .input-container {
+  //   height: 33%;
+  //   width: 33%;
+  //   justify-self: center;
+  //   align-self: center;
+  //   margin: 28%;
+  // }
   
 
   
