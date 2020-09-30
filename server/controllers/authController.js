@@ -1,5 +1,4 @@
 const bcrypt = require('bcryptjs');
-const { Redirect } = require('react-router-dom');
 
 module.exports = {
     register: async (req, res) => {
