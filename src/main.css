@@ -114,7 +114,7 @@
 }
 
 .inputs {
-  margin: 3vh;
+  margin: 2vh;
   text-align: center;
 }
 
@@ -124,5 +124,17 @@
 
 .linkto p {
   margin: 1vh;
+}
+
+.login-button {
+  margin: 1vh;
+  background-color: #3c291c;
+  color: #a16b25;
+}
+
+.register-button {
+  margin: 1vh;
+  background-color: #3c291c;
+  color: #a16b25;
 }
 /*# sourceMappingURL=main.css.map */

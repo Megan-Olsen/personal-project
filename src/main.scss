@@ -86,7 +86,7 @@ $color6: #a16b25;
     font-weight: 700;
   }
   .inputs {
-    margin: 3vh;
+    margin: 2vh;
     text-align: center;
   }
   .inputsboxes p{
@@ -94,6 +94,16 @@ $color6: #a16b25;
   }
   .linkto p{
     margin: 1vh;
+  }
+  .login-button {
+    margin: 1vh;
+    background-color: $color4;
+    color: $color6;
+  }
+  .register-button {
+    margin: 1vh;
+    background-color: $color4;
+    color: $color6;
   }
   
 
