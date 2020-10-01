@@ -137,4 +137,46 @@
   background-color: #3c291c;
   color: #a16b25;
 }
+
+.account {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #243624;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.userinfo {
+  width: 35%;
+  height: 80%;
+  background-color: #a16b25;
+  border-radius: 15%;
+  padding: 1%;
+  opacity: 85%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.partiesdisplay {
+  width: 35%;
+  height: 80%;
+  background-color: #a16b25;
+  border-radius: 15%;
+  padding: 1%;
+  opacity: 85%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 /*# sourceMappingURL=main.css.map */
