@@ -56,12 +56,16 @@ class Register extends Component {
                         }} className="register-button">Register</button>
                     </div>
                     <div className="linkto">
-                        <span>Learn more about us or ask your questions </span>
-                        <Link classname="redirect" to="/contact">here</Link><br/>
-                        <span>Already have an account?</span>
-                        <Link className="redirect" to="/">
-                            Log In
-                        </Link>
+                        <p>
+                            <span>Learn more about us or ask your questions </span>
+                            <Link classname="redirect" to="/contact">here</Link><br/>
+                        </p>
+                        <p>
+                            <span>Already have an account?</span>
+                            <Link className="redirect" to="/">
+                                Log In
+                            </Link>
+                        </p>
                     </div>
                 </div>
             </div>

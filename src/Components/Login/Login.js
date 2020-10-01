@@ -49,12 +49,16 @@ class Login extends Component {
                         }} className="login-button">Log In</button>
                     </div>
                     <div className="linkto">
-                        <span>Learn more about us or ask your questions </span>
-                        <Link className="redirect" to="/contact">here</Link><br/>
-                        <span>Need to make an account? Register </span>
-                        <Link className="redirect" to="/register">
-                            here
-                        </Link>
+                        <p>
+                            <span>Learn more about us or ask your questions </span>
+                            <Link className="redirect" to="/contact">here</Link><br/>
+                        </p>
+                        <p>
+                            <span>Need to make an account? Register </span>
+                            <Link className="redirect" to="/register">
+                                here
+                            </Link>
+                        </p>
                         <p>Forgot Password</p>
                     </div>
                 </div>
