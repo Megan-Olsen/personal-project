@@ -57,9 +57,11 @@ $color6: #a16b25;
   }
   .button {
     color: $color6;
-    border: none;
     background-color: $color5;
     margin: 2px;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
   }
   .login {
     color: $color2;
@@ -87,7 +89,7 @@ $color6: #a16b25;
     font-weight: 700;
   }
   .inputs {
-    margin: 2vh;
+    margin: 1vh;
     text-align: center;
   }
   .inputsboxes p{
@@ -100,11 +102,17 @@ $color6: #a16b25;
     margin: 1vh;
     background-color: $color4;
     color: $color6;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
   }
   .register-button {
     margin: 1vh;
     background-color: $color4;
     color: $color6;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
   }
   .account {
     height: 100%;
@@ -138,5 +146,27 @@ $color6: #a16b25;
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  .changeinfo {
+    height: 100%;
+    width: 100%;
+  }
+  .detailcontainer {
+    display: flex;
+    height: 35vh;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .detailcontainer p{
+    margin: 2vh;
+  }
+  .detailcontainer button {
+    width: 35%;
+    align-self: center;
+    background-color: $color4;
+    color: $color6;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
+  }
   
