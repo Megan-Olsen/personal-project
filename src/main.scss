@@ -60,21 +60,35 @@ $color6: #a16b25;
     background-color: $color5;
     margin: 2px;
   }
-
-
-
-
-
-
-
-
-  // .input-container {
-  //   height: 33%;
-  //   width: 33%;
-  //   justify-self: center;
-  //   align-self: center;
-  //   margin: 28%;
-  // }
+  .login {
+    color: $color2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    font-weight: 700;
+  }
+  .input-container {
+    align-self: center;
+    height: 30vh;
+    width: height;
+    background-color: $color6;
+    border-radius: 15%;
+    padding: 1%;
+    opacity: 85%;
+  }
+  .register {
+    color: $color2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    font-weight: 700;
+  }
+  .inputs {
+    margin: 3vh;
+    text-align: center;
+  }
   
 
   

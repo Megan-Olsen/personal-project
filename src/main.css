@@ -72,4 +72,49 @@
   background-color: #2d1e10;
   margin: 2px;
 }
+
+.login {
+  color: #243624;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  font-weight: 700;
+}
+
+.input-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 30vh;
+  width: height;
+  background-color: #a16b25;
+  border-radius: 15%;
+  padding: 1%;
+  opacity: 85%;
+}
+
+.register {
+  color: #243624;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  font-weight: 700;
+}
+
+.inputs {
+  margin: 3vh;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

@@ -55,6 +55,7 @@ class Login extends Component {
                         <Link className="redirect" to="/register">
                             here
                         </Link>
+                        <p>Forgot Password</p>
                     </div>
                 </div>
             </div>
