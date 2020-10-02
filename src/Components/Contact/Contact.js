@@ -1,17 +1,33 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import AboutUs from './AboutUs';
+import Form from './Form';
+// import { withRouter} from 'react-router-dom';
+// import { getUser } from '../../ducks/authReducer';
 
 
-const Contact = () => {
+class Contact extends Component {
 
 
-    return(
-        <div>
-            <p>Contact</p>
+    render(){
+
+        return (
+            <div className="account">
+                <div className="userinfo">
+                <AboutUs />
 
 
+                </div>
+                <div className="partiesdisplay">
+                <Form />
 
 
-        </div>
-    )
+                </div>
+            </div>
+        )
+    }
 }
-export default Contact;
+
+const mapStateToProps = (state) => state
+
+export default connect(mapStateToProps)(Contact);
