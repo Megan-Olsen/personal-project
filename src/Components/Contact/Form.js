@@ -1,14 +1,60 @@
-import React from 'react';
+import React, {Component} from 'react';
+import axios from 'axios';
 
 
-const Form = () => {
 
-    return(
-        <div>
-            <p></p>
+class Form extends Component {
+
+    handleSubmit(e){
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        axios({
+            method: "POST",
+            url:"/contact/submit",
+            data: {
+                name: name,
+                email: email,
+                message: message
+            }
+        }).then((response)=>{
+            if (response.data.msg === 'success'){
+                alert('Message Sent');
+                this.resetForm()
+            }else if(response.data.msg === 'fail'){
+                alert("Message failed to send")
+            }
+        })
+    }
+    resetFor(){
+        document.getElementById('contact-form').reset();
+    }
 
 
-        </div>
-    )
+    render(){
+        return(
+            <div>
+            <p>Contact Us</p>
+            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <div className="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" className="form-control" id="name"/>
+                </div>
+                <div className="form-group">
+                    <label for="input-email">Email Address: </label>
+                    <input type="email" className="form-control" id="email" aria-describedby="emailhelp" />
+                </div>
+                <div className="form-group">
+                    <label for="message">Message: </label>
+                    <textarea className="form-control" rows="5" id="message"></textarea>
+                </div>
+                <button type="submit" className="btn">Submit</button>
+                </form>
+
+
+            </div>
+        )
+    }
 }
 export default Form;
