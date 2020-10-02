@@ -16,7 +16,7 @@ class Details extends Component {
             <button>Update Username</button>
             <p>Email: {email}</p>
             <button>Update Email</button>
-            <p>Reset Password here</p>
+            <p>Click Here For Password Reset Email</p>
 
             </div>
 

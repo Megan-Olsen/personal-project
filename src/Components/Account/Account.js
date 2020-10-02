@@ -10,8 +10,7 @@ class Account extends Component {
 
 
     render(){
-        console.log(this.props)
-        const { username, email } = this.props.auth.user
+
         return (
             <div className="account">
                 <div className="userinfo">
