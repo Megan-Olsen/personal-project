@@ -19,7 +19,7 @@ class Contact extends Component {
 
                 </div>
                 <div className="partiesdisplay">
-                <Form />
+                <Form className="contacts"/>
 
 
                 </div>

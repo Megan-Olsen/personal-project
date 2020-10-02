@@ -224,4 +224,53 @@
   font-family: "Ink Free";
   font-weight: 700;
 }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  width: 30vw;
+  padding: 5vh;
+}
+
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  width: 30vw;
+  margin-top: 5vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 18px;
+}
+
+.btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1vh;
+  background-color: #3c291c;
+  color: #a16b25;
+  font-size: 16px;
+  font-family: "Ink Free";
+  font-weight: 700;
+}
+
+.form-control {
+  margin-left: 3vw;
+}
 /*# sourceMappingURL=main.css.map */
