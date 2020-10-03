@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 
 class Details extends Component {
-    render(){
+    render(props){
     console.log(this.props)
     const { username, email } = this.props.auth.user
 
@@ -13,7 +13,9 @@ class Details extends Component {
                 <p>Account Details</p>
             <div className="detailcontainer">
             <p>Username: {username}</p>
-            <button>Update Username</button>
+            <button onClick={() => {
+              this.props.toggleEdit()
+            }}>Update Username</button>
             <p>Email: {email}</p>
             <button>Update Email</button>
             <p>Click Here For Password Reset Email</p>

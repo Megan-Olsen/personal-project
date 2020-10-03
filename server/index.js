@@ -32,7 +32,7 @@ app.post('/api/auth/logout', authCtrl.logout)
 app.get('/api/auth/user', authCtrl.getUser)
 
 //edits user endpoint?
-app.put('/api/user/:userid', verifyUser, editCtrl.editUsername)
+app.put('/api/user/username', verifyUser, editCtrl.editUsername)
 
 
 
