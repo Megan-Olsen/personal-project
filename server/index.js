@@ -1,8 +1,10 @@
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
-const massive = require('massive')
+const massive = require('massive');
 const authCtrl = require('./controllers/authController');
+const editCtrl = require('./controllers/editController');
+const verifyUser = require('./middlewares/verifyUser')
 // const { Router } = require('express');
 // var nodemailer = require('nodemailer');
 // const creds = require('./config/config');
@@ -29,6 +31,8 @@ app.post('/api/auth/login', authCtrl.login)
 app.post('/api/auth/logout', authCtrl.logout)
 app.get('/api/auth/user', authCtrl.getUser)
 
+//edits user endpoint?
+app.put('/api/user/:userid', verifyUser, editCtrl.editUsername)
 
 
 
