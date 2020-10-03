@@ -8,6 +8,14 @@ import Parties from './Parties'
 
 class Account extends Component {
 
+    componentDidMount(){
+        if (this.props.isLoggedIn) {
+            const {userid} = this.props.auth.user
+            this.props.getUser().then(res => {
+                this.props.history.push(`/account/${userid}`)
+            })
+        }
+    }
 
     render(){
 

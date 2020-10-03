@@ -18,6 +18,9 @@ class Details extends Component {
             <button>Update Email</button>
             <p>Click Here For Password Reset Email</p>
 
+            <br/>
+            <button className="deleteAcc">Delete Account</button>
+
             </div>
 
             </div>
