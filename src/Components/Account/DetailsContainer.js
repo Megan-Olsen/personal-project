@@ -20,7 +20,6 @@ class DetailsContainer extends Component {
   render() {
     return this.state.isEditing ? (
       <Edit
-        handleEdit={this.props.handleEdit}
         toggleEdit={this.toggleEdit}
       />
     ) : (

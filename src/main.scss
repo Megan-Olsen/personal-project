@@ -73,7 +73,7 @@ $color6: #a16b25;
   }
   .input-container {
     align-self: center;
-    height: 30vh;
+    height: 35vh;
     width: height;
     background-color: $color6;
     border-radius: 15%;
@@ -200,4 +200,13 @@ $color6: #a16b25;
   }
   .deleteAcc {
     margin-top: 2vh;
+  }
+  .input-container-button-small {
+    align-self: center;
+    margin: 1vh;
+    background-color: $color4;
+    color: $color6;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
   }

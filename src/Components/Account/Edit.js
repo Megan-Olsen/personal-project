@@ -1,8 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getUser} from '../../ducks/authReducer'
+import axios from 'axios';
 
-//TODO Write methods, connect to JSX
+
 
 class Edit extends React.Component {
   constructor(props) {
@@ -19,6 +20,11 @@ class Edit extends React.Component {
     }
 }
 
+handleInput = (e) => {
+  this.setState({
+      [e.target.name]: e.target.value
+  })
+}
 
 
   handleCancel = () => {
@@ -31,8 +37,18 @@ class Edit extends React.Component {
     })
   }
 
+  handleEdit = () => {
+    const {username} = this.state
+    const {userid} = this.props.auth
+    axios.put('/api/user/username', {username, userid}).then((res) => {
+        this.props.getUser(res.data)
+    })
+}
+
+
   handleSave = () => {
-    this.props.handleEdit(this.props.auth.userid, this.state.username)
+    this.handleEdit(this.state.username, this.props.auth.userid)
+    this.props.getUser()
     this.props.toggleEdit()
   }
 
@@ -43,7 +59,7 @@ class Edit extends React.Component {
           <p>Username:</p>
           <input
             className="post-text"
-            value={this.state.username}
+            name="username"
             onChange={(e) => {
               this.handleChange(e)
             }}

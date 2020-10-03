@@ -1,9 +1,9 @@
-import axios from 'axios';
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import DetailsContainer from './DetailsContainer'
 import Parties from './Parties'
 import {getUser} from '../../ducks/authReducer'
+
 // import { withRouter} from 'react-router-dom';
 // import { getUser } from '../../ducks/authReducer';
 
@@ -18,18 +18,13 @@ class Account extends Component {
     //         })
     //     }
     // }
-    handleEdit = (userid, content) => {
-        axios.put('/api/user/username').then((res) => {
-            this.props.getUser(res.data)
-        })
-    }
 
     render(){
 
         return (
             <div className="account">
                 <div className="userinfo">
-                <DetailsContainer handleEdit={this.handleEdit} />
+                <DetailsContainer  />
 
 
                 </div>
