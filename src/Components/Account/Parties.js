@@ -6,6 +6,9 @@ const Parties = () => {
     return(
         <div>
             <p>Parties</p>
+            <p>Parties</p>
+            <p>Parties</p>
+            <p>Parties</p>
 
 
         </div>

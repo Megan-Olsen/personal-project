@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import DetailsContainer from './DetailsContainer'
-import Parties from './Parties'
+import PartiesContainer from './PartiesContainer'
 import {getUser} from '../../ducks/authReducer'
 
 // import { withRouter} from 'react-router-dom';
@@ -29,7 +29,7 @@ class Account extends Component {
 
                 </div>
                 <div className="partiesdisplay">
-                <Parties/>
+                <PartiesContainer/>
 
 
                 </div>

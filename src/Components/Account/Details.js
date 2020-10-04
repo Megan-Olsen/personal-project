@@ -9,7 +9,7 @@ class Details extends Component {
     const { username, email } = this.props.auth.user
 
         return(
-            <div classname="changeinfo">
+            <div className="changeinfo">
                 <p>Account Details</p>
             <div className="detailcontainer">
             <p>Username: {username}</p>

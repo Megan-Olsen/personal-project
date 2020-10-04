@@ -24,7 +24,6 @@ class DetailsContainer extends Component {
       />
     ) : (
       <Details
-        handleDelete={this.props.handleDelete}
         toggleEdit={this.toggleEdit}
       />
     )

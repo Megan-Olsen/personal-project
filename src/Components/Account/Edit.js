@@ -38,15 +38,18 @@ handleInput = (e) => {
   }
 
   handleEdit = () => {
+    console.log('hit line 40')
     const {username} = this.state
     const {userid} = this.props.auth
     axios.put('/api/user/username', {username, userid}).then((res) => {
-        this.props.getUser(res.data)
+        return res.data
     })
 }
 
 
-  handleSave = () => {
+  handleSave = (e) => {
+    console.log('hit handlesave')
+    e.preventDefault()
     this.handleEdit(this.state.username, this.props.auth.userid)
     this.props.getUser()
     this.props.toggleEdit()
@@ -76,8 +79,8 @@ handleInput = (e) => {
           </button>
           <button
             className="input-container-button-small"
-            onClick={() => {
-              this.handleSave()
+            onClick={(e) => {
+              this.handleSave(e)
             }}
           >
             Save
