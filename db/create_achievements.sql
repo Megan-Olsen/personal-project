@@ -1,0 +1,3 @@
+INSERT INTO achievements (cityrule_militaristic,	cityrule_economic,	voice_freed,	voice_silenced,	drake_aided,	drake_slain,	dead_invade,	mechant_flees,	artifact_recovered,	artifact_lost,	artifact_cleansed,	citryrule_demonic,	ancient_technology,	end_gloom,	end_corruption,	end_invasion,	edge_darkness,	rift_neutralized,	power_enhancement, water_breathing, annihilation_order)
+VALUES ('Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive', 'Inactive')
+returning achievementsid;
