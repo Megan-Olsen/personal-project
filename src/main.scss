@@ -153,7 +153,7 @@ $color6: #a16b25;
     width: 100%;
   }
   .changeinfo p {
-    margin-bottom: 5%;
+    margin-bottom: 2vh;
   }
   .detailcontainer {
     display: flex;
@@ -215,3 +215,14 @@ $color6: #a16b25;
     font-family: "Ink Free";
     font-weight: 700;
   }
+  .changeinfo button {
+    align-self: center;
+    margin: 1vh;
+    background-color: $color4;
+    color: $color6;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
+  }
+  
+  

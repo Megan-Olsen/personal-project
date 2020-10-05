@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 
-const Parties = () => {
+class Parties extends Component {
 
+    render(props){
     return(
         <div>
+            <div className="partybuttons">
+                <button onClick={()=>{
+                    this.props.toggleCreate()
+                }}>Create New Party</button>
+                <button onClick={()=>{this.props.toggleJoining()}}>Join A Party</button>
+            </div>
             <p>Parties</p>
             <p>Parties</p>
             <p>Parties</p>
@@ -13,5 +20,5 @@ const Parties = () => {
 
         </div>
     )
-}
+}}
 export default Parties;
