@@ -303,6 +303,7 @@ SELECT * FROM citydeck JOIN party ON citydeck.citydeckid = party.citydeckid;
 SELECT * FROM roaddeck JOIN party ON roaddeck.roaddeckid = party.roaddeckid;
 
 CREATE TABLE usersparties (
+id serial primary key,
 userid integer references users(userid),
 partyid integer references party(partyid),
 characterchoice text,
