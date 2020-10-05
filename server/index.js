@@ -5,6 +5,7 @@ const massive = require('massive');
 const authCtrl = require('./controllers/authController');
 const editCtrl = require('./controllers/editController');
 const verifyUser = require('./middlewares/verifyUser');
+const partCtrl = require('./controllers/partycontroller');
 // const { Router } = require('express');
 // var nodemailer = require('nodemailer');
 // const creds = require('./config/config');
@@ -33,6 +34,8 @@ app.get('/api/auth/user', authCtrl.getUser)
 
 //edits user endpoint?
 app.put('/api/user/username', verifyUser, editCtrl.editUsername)
+//newparty endpoint
+app.post('/api/newparty', verifyUser, partCtrl.newParty)
 
 
 

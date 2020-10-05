@@ -5,7 +5,7 @@ import Parties from './Parties'
 const PartiesContainer = () => {
 
     return(
-        <div>
+        <div className="changeinfo">
             <p>PartiesContainer</p>
             <Parties/>
 

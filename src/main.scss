@@ -134,6 +134,7 @@ $color6: #a16b25;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    padding:2%;
   }
   .partiesdisplay {
     width: 35%;
@@ -145,10 +146,14 @@ $color6: #a16b25;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    padding:2%;
   }
   .changeinfo {
     height: 100%;
     width: 100%;
+  }
+  .changeinfo p {
+    margin-bottom: 5%;
   }
   .detailcontainer {
     display: flex;
