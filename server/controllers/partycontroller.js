@@ -17,6 +17,14 @@ module.exports = {
         req.session.party = newParty
 
         res.status(200).send(req.session.party)
+    },
+    getParty: async (req, res) => {
+        if (req.session.party){
+            res.status(200).send(req.session.party)
+        } else {
+            res.status(404).send('No party on session')
+        }
+
     }
 
 }

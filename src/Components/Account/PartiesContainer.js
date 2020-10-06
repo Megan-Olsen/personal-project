@@ -27,7 +27,6 @@ class PartiesContainer extends Component {
     render(){
     return(
         <div className="changeinfo">
-            <p>Party Control</p>
             <div>{ this.state.isCreating ? (<Createparty toggleCreate={this.toggleCreate}/>): this.state.isJoining ? (<JoinParty toggleJoining={this.toggleJoining}/>):
             <Parties toggleCreate={this.toggleCreate} toggleJoining={this.toggleJoining}/>
             }

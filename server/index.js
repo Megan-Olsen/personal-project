@@ -36,6 +36,7 @@ app.get('/api/auth/user', authCtrl.getUser)
 app.put('/api/user/username', verifyUser, editCtrl.editUsername)
 //newparty endpoint
 app.post('/api/newparty', verifyUser, partCtrl.newParty)
+app.get('/api/party/get', verifyUser, partCtrl.getParty)
 
 
 
