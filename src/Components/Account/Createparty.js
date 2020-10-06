@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import { toParty} from '../../ducks/partyReducer';
 import { connect } from 'react-redux';
+import {withRouter} from 'react-router-dom';
 
 
 class Createparty extends Component {
@@ -20,7 +21,10 @@ class Createparty extends Component {
     }
     handleCreateParty = () => {
         const {partyName} = this.state
-        axios.post('/api/newparty', {partyName}).then((res) => { const {partyid} = res.data.party
+        axios.post('/api/newparty', {partyName}).then((res) => { 
+            this.props.toParty(res.data.partyid)
+            console.log('res.data', res.data)
+            const {partyid} = res.data
             this.props.history.push(`/party/${partyid}`)
         }).catch((err) => {
             alert('cannot find party')
@@ -40,4 +44,6 @@ class Createparty extends Component {
         </div>
     )
 }}
-export default connect(null, {toParty})(Createparty);
+const mapStateToProps = (state) => state
+
+export default withRouter(connect(mapStateToProps, {toParty})(Createparty));

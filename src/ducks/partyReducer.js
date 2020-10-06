@@ -1,25 +1,27 @@
-// import axios from 'axios'
+import axios from 'axios'
 
 const initialState ={
-    party: {
-        partyid: 0,
-        partyname: '',
-        scenarioid: 0,
-        achievementsid: 0,
-        citydeckid: 0,
-        roaddeckid:0
-    },
+    party: {},
     scenarios: {},
     achievements: {},
     citydeck: {},
     roaddeck: {}
 }
 const TO_PARTY = 'TO_PARTY'
+const GET_PARTY = 'GET_PARTY'
 
-export function toParty(party){
+export function toParty(partyid){
+    const payload = axios.post('/api/party/find', {partyid})
     return {
         type: TO_PARTY,
-        payload: party
+        payload: payload
+    }
+}
+export function getParty(){
+    const payload = axios.get('/api/party/get')
+    return {
+        type: GET_PARTY,
+        payload: payload
     }
 }
 
@@ -27,9 +29,11 @@ export function toParty(party){
 
 export default function (state = initialState, action){
     switch (action.type) {
-        case TO_PARTY:
-            return {...state, partyid: action.party.partyid, partyname: action.party.partyname, scenariosid: action.party.scenariosid, achievementid: action.party.achievementsid, citydeckid: action.party.citydeckid, roaddeckid: action.party.roaddeckid }
+        case TO_PARTY + '_FULFILLED':
+            return {...state, party: action.payload.data }
+        case GET_PARTY + '_FULFILLED':
+            return {...state, party: action.payload.data}
         default:
-            return initialState
+            return state
     }
 }

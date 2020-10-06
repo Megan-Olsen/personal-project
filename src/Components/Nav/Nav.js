@@ -14,6 +14,7 @@ class Nav extends Component {
         }
         this.props.getUser()
     }
+    
     componentDidUpdate(prevProps){
         if (this.props.userid !== prevProps.userid){
         this.props.getUser()

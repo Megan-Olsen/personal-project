@@ -18,6 +18,19 @@ module.exports = {
 
         res.status(200).send(req.session.party)
     },
+    findParty: async (req, res) => {
+        const db = req.app.get('db')
+        const {partyid} = req.body
+        const [currentParty] = await db.check_party([partyid])
+        if(!currentParty) {
+            return res.status(404).send('Party not found')
+        }
+
+        req.session.party = currentParty
+
+        res.status(200).send(req.session.party)
+
+    },
     getParty: async (req, res) => {
         if (req.session.party){
             res.status(200).send(req.session.party)

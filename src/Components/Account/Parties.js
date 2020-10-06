@@ -10,7 +10,7 @@ class Parties extends Component {
                 <button onClick={()=>{
                     this.props.toggleCreate()
                 }}>Create New Party</button>
-                <button onClick={()=>{this.props.toggleJoining()}}>Join A Party</button>
+                <button onClick={()=>{this.props.toggleJoining()}}>Find A Party</button>
             </div>
             <p>Parties</p>
             <p>Parties</p>
