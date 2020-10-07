@@ -38,6 +38,10 @@ app.put('/api/user/username', verifyUser, editCtrl.editUsername)
 app.post('/api/newparty', verifyUser, partCtrl.newParty)
 app.get('/api/party/get', verifyUser, partCtrl.getParty)
 app.post('/api/party/find', verifyUser, partCtrl.findParty)
+app.get('/api/scenarios', verifyUser, partCtrl.getScenarios)
+app.get('/api/achievements', verifyUser, partCtrl.getAchievements)
+app.get('/api/city', verifyUser, partCtrl.getCity)
+app.get('/api/road', verifyUser, partCtrl.getRoad)
 
 
 

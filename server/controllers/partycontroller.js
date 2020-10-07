@@ -38,6 +38,37 @@ module.exports = {
             res.status(404).send('No party on session')
         }
 
+    },
+    getScenarios: async (req, res) => {
+        const db = req.app.get('db')
+        const {scenarioid} = req.body
+        const [currentScenarios] = await db.get_scenarios([scenarioid])
+        if(!currentScenarios){ return res.status(404).send('Scenarios not found')}
+        req.session.scenarios = currentScenarios
+        res.status(200).send(req.session.scenarios)
+    },
+    getAchievements: async (req, res) => {
+        const db = req.app.get('db')
+        const {achievementsid} = req.body
+        const [currentAchievements] = await db.get_achievements([achievementsid])
+        if(!currentAchievements){return res.status(404).send('Achievements not found')}
+        req.session.achievements = currentAchievements
+        res.status(200).send(req.session.achievements)
+    },
+    getCity: async (req, res) => {
+            const db = req.app.get('db')
+            const {citydeckid} = req.body
+            const [currentCity] = await db.get_city([citydeckid])
+            if(!currentCity){return res.status(404).send('City not found')}
+            req.session.city = currentCity
+            res.status(200).send(req.session.city)
+    },
+    getRoad: async (req, res) => {
+        const db = req.app.get('db')
+        const {roaddeckid} = req.body
+        const [currentRoad] = await db.get_road([roaddeckid])
+        if(!currentRoad){return res.status(404).send('Road not found')}
+        req.session.road = currentRoad
+        res.status(200).send(req.session.road)
     }
-
 }

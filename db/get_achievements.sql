@@ -1,0 +1,1 @@
+SELECT * FROM achievements WHERE achievementsid = $1;

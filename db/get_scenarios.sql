@@ -1,0 +1,1 @@
+SELECT * FROM scenarios WHERE scenarioid = $1;
