@@ -17,16 +17,25 @@ class Party extends Component{
         await this.props.getAchievements(this.props.partr.party.achievementsid)
         await this.props.getCity(this.props.partr.party.citydeckid)
         await this.props.getRoad(this.props.partr.party.roaddeckid)
-    
     }
+
+    getUlScenarios(){
+    let scenarios = this.props.partr.scenarios
+    let unlockedScenarios = []
+    for( let prop in scenarios){
+    if(scenarios[prop] === "Unlocked"){
+        unlockedScenarios.push(prop)
+    }}
+    return unlockedScenarios
+}
     
     render(props){
-        const {partyname, scenarioid, achievementsid, citydeckid, roaddeckid} = this.props.partr.party
+        const {partyname} = this.props.partr.party
     return(
         <div>
             <p className="partyName"><h1>Party:</h1>
             <h3>{partyname}</h3></p>
-            <ScenariosContainer scenarioid={scenarioid}/>
+            <ScenariosContainer />
 
 
         </div>
