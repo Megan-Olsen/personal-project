@@ -73,6 +73,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .login {
@@ -135,6 +136,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .register-button {
@@ -144,6 +146,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .account {
@@ -229,6 +232,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .contacts {
@@ -274,6 +278,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .form-control {
@@ -294,6 +299,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .changeinfo button {
@@ -306,6 +312,7 @@
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
+  cursor: pointer;
 }
 
 .creatingparty h1 {
