@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { toParty } from '../../ducks/partyReducer';
+import { toParty} from '../../ducks/partyReducer';
 import { connect } from 'react-redux';
 import {withRouter} from 'react-router-dom';
 
@@ -22,8 +22,8 @@ class Joinparty extends Component {
     handleFindParty =() => {
         const {partyid} = this.state
         axios.post('/api/party/find', {partyid}).then((res) => {
-            this.props.toParty(res.data.partyid)
             const {partyid} = res.data
+            this.props.toParty(partyid)
             this.props.history.push(`/party/${partyid}`)
         }).catch((err) => {alert('cannot find party')})
     }

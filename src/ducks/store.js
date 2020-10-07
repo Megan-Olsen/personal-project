@@ -6,7 +6,7 @@ import partyReducer from './partyReducer'
 
 const reducer = combineReducers({
     auth: authReducer,
-    partr: partyReducer
+    partr: partyReducer,
 })
 
 export default createStore(

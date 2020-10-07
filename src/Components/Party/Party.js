@@ -1,21 +1,32 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {getParty} from '../../ducks/partyReducer'
+import {getParty, getScenarios, getAchievements, getCity, getRoad} from '../../ducks/partyReducer'
 import ScenariosContainer from './ScenariosContainer'
 
 class Party extends Component{
 
     componentDidMount(){
-        this.props.getParty()
+        this.getAll()
+    }
+    
+
+    async getAll(){
+        await this.props.getParty()
+        console.log(this.props.partr.party.scenarioid)
+        await this.props.getScenarios(this.props.partr.party.scenarioid)
+        await this.props.getAchievements(this.props.partr.party.achievementsid)
+        await this.props.getCity(this.props.partr.party.citydeckid)
+        await this.props.getRoad(this.props.partr.party.roaddeckid)
+    
     }
     
     render(props){
-        console.log('this.props', this.props)
+        const {partyname, scenarioid, achievementsid, citydeckid, roaddeckid} = this.props.partr.party
     return(
         <div>
             <p className="partyName"><h1>Party:</h1>
-            <h3>{this.props.partr.party.partyname}</h3></p>
-            <ScenariosContainer/>
+            <h3>{partyname}</h3></p>
+            <ScenariosContainer scenarioid={scenarioid}/>
 
 
         </div>
@@ -23,4 +34,4 @@ class Party extends Component{
 }}
 const mapStateToProps = (state) => state
 
-export default connect(mapStateToProps, {getParty})(Party);
+export default connect(mapStateToProps, {getParty, getScenarios, getAchievements, getCity, getRoad})(Party);

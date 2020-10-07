@@ -28,29 +28,29 @@ export function getParty(){
         payload: payload
     }
 }
-export function getScenarios(){
-    const payload = axios.get('/api/scenarios')
+export function getScenarios(scenarioid){
+    const payload = axios.post('/api/scenarios', {scenarioid})
     return {
         type: GET_SCENARIOS,
         payload: payload
     }
 }
-export function getAchievements(){
-    const payload = axios.get('/api/achievements')
+export function getAchievements(achievementsid){
+    const payload = axios.post('/api/achievements', {achievementsid})
     return {
         type: GET_ACHIEVEMENTS,
         payload: payload
     }
 }
-export function getCity(){
-    const payload = axios.get('/api/city')
+export function getCity(citydeckid){
+    const payload = axios.post('/api/city', {citydeckid})
     return {
         type: GET_CITY,
         payload: payload
     }
 }
-export function getRoad(){
-    const payload = axios.get('/api/road')
+export function getRoad(roaddeckid){
+    const payload = axios.post('/api/road', {roaddeckid})
     return {
         type: GET_ROAD,
         payload: payload
@@ -62,6 +62,8 @@ export default function (state = initialState, action){
             return {...state, party: action.payload.data }
         case GET_PARTY + '_FULFILLED':
             return {...state, party: action.payload.data}
+        case GET_SCENARIOS + '_PENDING':
+            return{...state}
         case GET_SCENARIOS + '_FULFILLED':
             return{...state, scenarios: action.payload.data}
         case GET_ACHIEVEMENTS + '_FULFILLED':

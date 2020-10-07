@@ -45,6 +45,7 @@ module.exports = {
         const [currentScenarios] = await db.get_scenarios([scenarioid])
         if(!currentScenarios){ return res.status(404).send('Scenarios not found')}
         req.session.scenarios = currentScenarios
+        console.log(req.session.scenarios)
         res.status(200).send(req.session.scenarios)
     },
     getAchievements: async (req, res) => {
