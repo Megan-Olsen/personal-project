@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {getParty, getScenarios, getAchievements, getCity, getRoad} from '../../ducks/partyReducer'
 import ScenariosContainer from './ScenariosContainer'
+import AchievementsContainer from './AchievementsContainer'
+import CityDeckContainer from './CityDeckContainer'
+import RoadDeckContainer from './RoadDeckContainer'
 
 class Party extends Component{
 
@@ -18,24 +21,16 @@ class Party extends Component{
         await this.props.getCity(this.props.partr.party.citydeckid)
         await this.props.getRoad(this.props.partr.party.roaddeckid)
     }
-
-    getUlScenarios(){
-    let scenarios = this.props.partr.scenarios
-    let unlockedScenarios = []
-    for( let prop in scenarios){
-    if(scenarios[prop] === "Unlocked"){
-        unlockedScenarios.push(prop)
-    }}
-    return unlockedScenarios
-}
     
     render(props){
-        const {partyname} = this.props.partr.party
+        const {partyname, partyid} = this.props.partr.party
     return(
         <div>
-            <p className="partyName"><h1>Party:</h1>
-            <h3>{partyname}</h3></p>
+            <p className="partyName"><h1>Party: {partyname}</h1><h3>Party Id: {partyid}</h3></p>
             <ScenariosContainer />
+            <AchievementsContainer />
+            <CityDeckContainer />
+            <RoadDeckContainer />
 
 
         </div>
