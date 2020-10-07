@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {getParty} from '../../ducks/partyReducer'
+import ScenariosContainer from './ScenariosContainer'
 
 class Party extends Component{
 
@@ -12,8 +13,9 @@ class Party extends Component{
         console.log('this.props', this.props)
     return(
         <div>
-            <p>Party</p>
-            <h3>{this.props.partr.party.partyname}</h3>
+            <p className="partyName"><h1>Party:</h1>
+            <h3>{this.props.partr.party.partyname}</h3></p>
+            <ScenariosContainer/>
 
 
         </div>
