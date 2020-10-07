@@ -28,9 +28,9 @@ class Party extends Component{
         <div>
             <p className="partyName"><h1>Party: {partyname}</h1><h3>Party Id: {partyid}</h3></p>
             <ScenariosContainer />
-            <AchievementsContainer />
+            {/* <AchievementsContainer />
             <CityDeckContainer />
-            <RoadDeckContainer />
+            <RoadDeckContainer /> */}
 
 
         </div>

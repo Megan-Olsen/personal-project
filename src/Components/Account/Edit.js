@@ -40,7 +40,7 @@ handleInput = (e) => {
   handleEdit = () => {
     console.log('hit line 40')
     const {username} = this.state
-    const {userid} = this.props.auth
+    const {userid} = this.props.auth.user
     axios.put('/api/user/username', {username, userid}).then((res) => {
         return res.data
     })
