@@ -7,7 +7,7 @@ class Party extends Component{
     componentDidMount(){
         this.props.getParty()
     }
-
+    
     render(props){
         console.log('this.props', this.props)
     return(

@@ -23,7 +23,6 @@ class Createparty extends Component {
         const {partyName} = this.state
         axios.post('/api/newparty', {partyName}).then((res) => { 
             this.props.toParty(res.data.partyid)
-            console.log('res.data', res.data)
             const {partyid} = res.data
             this.props.history.push(`/party/${partyid}`)
         }).catch((err) => {
