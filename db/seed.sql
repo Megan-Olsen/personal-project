@@ -309,6 +309,7 @@ partyid integer references party(partyid),
 characterchoice text,
 charactername text
 );
+
 SELECT * FROM users JOIN usersparties ON users.userid = usersparties.userid;
 SELECT * FROM party JOIN usersparties ON party.partyid = usersparties.partyid;
 

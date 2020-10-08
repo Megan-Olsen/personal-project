@@ -27,12 +27,14 @@ class Party extends Component{
     return(
         <div>
             <p className="partyName"><h1>Party: {partyname}</h1><h3>Party Id: {partyid}</h3></p>
+            <div className="partypage">
             <ScenariosContainer />
-            {/* <AchievementsContainer />
+            <AchievementsContainer />
+            {/* 
             <CityDeckContainer />
             <RoadDeckContainer /> */}
 
-
+        </div>
         </div>
     )
 }}

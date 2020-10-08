@@ -243,8 +243,6 @@ $color6: #a16b25;
     border-radius: 8%;
     padding: 1%;
     opacity: 85%;
-    margin-top: 3%;
-    margin-left: 5%;
     margin-right: 5%;
     padding:2%;
   }
@@ -269,4 +267,9 @@ $color6: #a16b25;
   }
   .post-text {
     margin-top: 1vh;
+  }
+  .partypage {
+    display: flex;
+    flex-direction: row;
+    padding: 6vh;
   }
