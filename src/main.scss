@@ -229,7 +229,7 @@ $color6: #a16b25;
     font-size: 16px;
     font-family: "Ink Free";
     font-weight: 700;
-    cursor: pointer;
+        cursor: pointer;
   }
   .creatingparty h1{
     margin-bottom: 2vh;
@@ -247,4 +247,14 @@ $color6: #a16b25;
     margin-left: 5%;
     margin-right: 5%;
     padding:2%;
+  }
+  .return {
+    color: $color6;
+    background-color: $color5;
+    margin: 2px;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 6vw;
   }

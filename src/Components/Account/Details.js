@@ -17,7 +17,7 @@ class Details extends Component {
               this.props.toggleEdit()
             }}>Update Username</button>
             <p>Email: {email}</p>
-            <button>Update Email</button>
+            <button onClick={()=> { this.props.toggleEditEmail()}}>Update Email</button>
             <p>Click Here For Password Reset Email</p>
 
             <br/>

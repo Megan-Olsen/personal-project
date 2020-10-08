@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 
 class Parties extends Component {
-
+//state holds array of parties... then .map the state. 
     render(props){
     return(
         <div>

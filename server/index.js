@@ -34,6 +34,7 @@ app.get('/api/auth/user', authCtrl.getUser)
 
 //edits user endpoint?
 app.put('/api/user/username', verifyUser, editCtrl.editUsername)
+app.put('/api/user/email', verifyUser, editCtrl.editEmail)
 //newparty endpoint
 app.post('/api/newparty', verifyUser, partCtrl.newParty)
 app.get('/api/party/get', verifyUser, partCtrl.getParty)
