@@ -1,12 +1,28 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import axios from 'axios';
+import {withRouter} from 'react-router-dom';
+import {getUser} from '../../ducks/authReducer';
 
 
 
 class Details extends Component {
+    constructor(props){
+        super(props)
+
+    }
+    handleDelete = () => {
+            const {userid} = this.props.auth.user
+            axios.delete(`/api/auth/${userid}`).then((res) => {
+                this.props.getUser()
+                this.props.history.push('/')
+            })
+        }
+    
     render(props){
     console.log(this.props)
     const { username, email } = this.props.auth.user
+
 
         return(
             <div className="changeinfo">
@@ -21,7 +37,7 @@ class Details extends Component {
             <p>Click Here For Password Reset Email</p>
 
             <br/>
-            <button className="deleteAcc">Delete Account</button>
+            <button className="deleteAcc" onClick={()=> {this.handleDelete()}}>Delete Account</button>
 
             </div>
 
@@ -31,4 +47,4 @@ class Details extends Component {
 }
 const mapStateToProps = (state) => state
 
-export default connect(mapStateToProps)(Details);
+export default withRouter(connect(mapStateToProps, {getUser})(Details));

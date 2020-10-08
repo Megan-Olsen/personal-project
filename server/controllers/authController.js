@@ -51,6 +51,16 @@ module.exports = {
         } else {
             res.status(404).send('No session found')
         }
+    },
+    deleteAcc: async (req, res) => {
+        const db = req.app.get('db')
+        const {userid} = req.params
+
+        await db.delete_account([userid])
+
+        req.session.destroy()
+
+        res.sendStatus(200)
     }
 
 
