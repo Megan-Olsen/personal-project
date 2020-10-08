@@ -236,14 +236,14 @@ $color6: #a16b25;
   }
   .scenarioscontainer {
     width: 35%;
-    height: 80%;
+    height: 70vh;
     background-color: $color6;
     color: $color2;
     font-weight: 700;
-    border-radius: 15%;
+    border-radius: 8%;
     padding: 1%;
     opacity: 85%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     padding:2%;
@@ -257,4 +257,16 @@ $color6: #a16b25;
     font-weight: 700;
     cursor: pointer;
     margin-right: 6vw;
+  }
+  .partyName {
+    background-color: $color6;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    color: $color2;
+    opacity: 75%;
+    padding-bottom: 2px;
+  }
+  .post-text {
+    margin-top: 1vh;
   }
