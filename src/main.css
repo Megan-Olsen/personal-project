@@ -388,4 +388,19 @@
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.displayChar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1vh;
+  text-transform: uppercase;
+  border-bottom: solid #3c291c;
+}
 /*# sourceMappingURL=main.css.map */

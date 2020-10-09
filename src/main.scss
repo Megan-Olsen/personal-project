@@ -288,3 +288,11 @@ $color6: #a16b25;
     right: 0;
     align-self: center;
   }
+  .displayChar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1vh;
+    text-transform: uppercase;
+    border-bottom: solid $color4;
+  }

@@ -8,7 +8,8 @@ class CharactersContainer extends Component{
     constructor(props){
         super(props)
         this.state = {
-            characters: null,
+            characters: [],
+
         }
     }
 
@@ -20,31 +21,33 @@ class CharactersContainer extends Component{
     async getChar() {
         await this.props.getParty()
         const partyid = this.props.partr.party.partyid
-        console.log('party', partyid)
         axios.post('/api/partychar', {partyid}).then((res) => {
-            console.log('char', res.data)
             this.setState({
             characters: res.data
         })})
     }
-    
+
 
     render(){
-
+        const mappedCharsp = this.state.characters.map((character, index) =>{
+            return (
+                <PartyChar 
+                character={character}
+                key={character.id} />)})
         return(
-
             <div className="characters">
-                <p>
-                    Characters
-                </p>
-                <p>
-                <button className="btn" onClick={() => {
-              this.props.toggleNewChar()
-            }}>Join Party</button>
-                </p>
+            <p>
+                Characters
+            </p>
+            <p>
+            <button className="btn" onClick={() => {
+          this.props.toggleNewChar()
+        }}>Join Party</button>
+            </p>
+        <p>{mappedCharsp}</p>
 
-
-            </div>
+        </div>
+            
         )
     }
 }
