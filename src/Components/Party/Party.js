@@ -16,7 +16,7 @@ class Party extends Component{
 
     async getAll(){
         await this.props.getParty()
-        console.log(this.props.partr.party.scenarioid)
+
         await this.props.getScenarios(this.props.partr.party.scenarioid)
         await this.props.getAchievements(this.props.partr.party.achievementsid)
         await this.props.getCity(this.props.partr.party.citydeckid)
@@ -27,11 +27,11 @@ class Party extends Component{
         const {partyname, partyid} = this.props.partr.party
     return(
         <div>
-            <p className="partyName"><h1>Party: {partyname}</h1><h3>Party Id: {partyid}</h3></p>
+            <div className="partyName"><h1>Party: {partyname}</h1><h3>Party Id: {partyid}</h3></div>
             <div className="partypage">
             <ScenariosContainer />
             <AchievementsContainer />
-            <CharactersContainer/>
+            <CharactersContainer />
             {/* 
             <CityDeckContainer />
             <RoadDeckContainer /> */}
