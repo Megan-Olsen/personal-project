@@ -45,21 +45,21 @@ class CharactersContainer extends Component{
                 character={character}
                 key={character.id} />)})
         return(
-            <p className="characters">
-            <p>
+            <div className="characters">
+            <div>
                 Characters
-            </p>
+            </div>
 
 
-        <p>{mappedCharsp}</p>
+        <div>{mappedCharsp}</div>
 
-        <p>
+        <div>
             {this.state.characters.length < 4 ? <button className="btn" onClick={() => {
           this.toggleNewChar()
         }}>Join Party</button>: null }
-            </p>
-            <p>{this.state.creating ? <NewCharacter toggleNewChar={this.toggleNewChar} partyid={partyid} userid={userid} /> : null}</p>
-        </p>
+            </div>
+            <div>{this.state.creating ? <NewCharacter toggleNewChar={this.toggleNewChar} partyid={partyid} userid={userid} /> : null}</div>
+        </div>
             
         )
     }

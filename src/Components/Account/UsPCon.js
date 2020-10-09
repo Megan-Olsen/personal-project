@@ -19,7 +19,6 @@ componentDidMount(){
 getParties(props) {
     const userid = this.props.auth.user.userid
     axios.post('/api/userchar', {userid}).then((res) => {
-        console.log('char', res.data)
         this.setState({
             characters:res.data
         })
