@@ -310,7 +310,7 @@ $color6: #a16b25;
     padding-top: 3vh;
   }
   .deletes {
-    background-color: $color5;
+    background-color: $color4;
     color: $color6;
     margin: 2px;
     font-size: 16px;
@@ -318,5 +318,28 @@ $color6: #a16b25;
     font-weight: 700;
     cursor: pointer;
   }
-
+  .circle {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+    color: $color6;
+    border: solid $color4 2px;
+  }
+  .thecircles {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .location {
+    color: $color2;
+    font-weight: 700;
+    margin-top: 2vh;
+    text-transform: uppercase;
+  }
 

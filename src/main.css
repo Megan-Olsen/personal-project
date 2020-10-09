@@ -421,12 +421,51 @@
 }
 
 .deletes {
-  background-color: #2d1e10;
+  background-color: #3c291c;
   color: #a16b25;
   margin: 2px;
   font-size: 16px;
   font-family: "Ink Free";
   font-weight: 700;
   cursor: pointer;
+}
+
+.circle {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #385132;
+  color: #a16b25;
+  border: solid #3c291c 2px;
+}
+
+.thecircles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location {
+  color: #243624;
+  font-weight: 700;
+  margin-top: 2vh;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

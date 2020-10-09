@@ -53,6 +53,10 @@ getLoScenarios(){
       return(
           <div className="scenarioscontainer">
             <p>Scenarios</p>
+            <p className="location">Current Location: Black Barrow</p>
+            <div className="thecircles">
+              <div className="circle">1</div>
+            </div>
           </div>
 
       )
