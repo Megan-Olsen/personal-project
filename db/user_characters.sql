@@ -1,1 +1,4 @@
-SELECT * FROM usersparties WHERE userid = $1;
+SELECT usersparties.characterchoice, usersparties.charactername, usersparties.partyid, party.partyname 
+FROM usersparties 
+INNER JOIN party ON usersparties.partyid = party.partyid
+WHERE userid = $1;
