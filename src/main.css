@@ -409,4 +409,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.achievementsContainer {
+  color: #243624;
+  font-weight: 700;
+  background-color: #a16b25;
+  opacity: 85%;
+  width: 10vw;
+  border-radius: 5vw;
+  padding: 1vh;
+  padding-top: 3vh;
+}
 /*# sourceMappingURL=main.css.map */

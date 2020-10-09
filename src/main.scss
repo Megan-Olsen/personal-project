@@ -300,3 +300,13 @@ $color6: #a16b25;
     margin-top: 2vh;
     align-items: center;
   }
+  .achievementsContainer {
+    color: $color2;
+    font-weight: 700;
+    background-color: $color6;
+    opacity: 85%;
+    width: 10vw;
+    border-radius: 5vw;
+    padding: 1vh;
+    padding-top: 3vh;
+  }
