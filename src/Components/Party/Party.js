@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {getParty, getScenarios, getAchievements, getCity, getRoad} from '../../ducks/partyReducer'
 import ScenariosContainer from './ScenariosContainer'
 import AchievementsContainer from './AchievementsContainer'
+import CharactersContainer from './CharactersContainer'
 import CityDeckContainer from './CityDeckContainer'
 import RoadDeckContainer from './RoadDeckContainer'
 
@@ -30,6 +31,7 @@ class Party extends Component{
             <div className="partypage">
             <ScenariosContainer />
             <AchievementsContainer />
+            <CharactersContainer/>
             {/* 
             <CityDeckContainer />
             <RoadDeckContainer /> */}

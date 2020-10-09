@@ -371,4 +371,21 @@
   padding-top: 5vh;
   padding-left: 5vh;
 }
+
+.characters {
+  width: 25%;
+  height: 20vh;
+  background-color: #a16b25;
+  color: #243624;
+  font-weight: 700;
+  border-radius: 8%;
+  padding: 1%;
+  opacity: 85%;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=main.css.map */

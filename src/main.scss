@@ -274,3 +274,17 @@ $color6: #a16b25;
     padding-top: 5vh;
     padding-left: 5vh;
   }
+  .characters {
+    width: 25%;
+    height: 20vh;
+    background-color: $color6;
+    color: $color2;
+    font-weight: 700;
+    border-radius: 8%;
+    padding: 1%;
+    opacity: 85%;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+    align-self: center;
+  }

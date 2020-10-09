@@ -6,6 +6,7 @@ const authCtrl = require('./controllers/authController');
 const editCtrl = require('./controllers/editController');
 const verifyUser = require('./middlewares/verifyUser');
 const partCtrl = require('./controllers/partycontroller');
+const charCtrl = require('./controllers/charController')
 // const { Router } = require('express');
 // var nodemailer = require('nodemailer');
 // const creds = require('./config/config');
@@ -44,6 +45,9 @@ app.post('/api/scenarios', verifyUser, partCtrl.getScenarios)
 app.post('/api/achievements', verifyUser, partCtrl.getAchievements)
 app.post('/api/city', verifyUser, partCtrl.getCity)
 app.post('/api/road', verifyUser, partCtrl.getRoad)
+app.post('/api/newcharacter', verifyUser, charCtrl.newChar)
+app.post('/api/partychar', charCtrl.partyChar)
+app.post('/api/userchar', charCtrl.userChar)
 
 
 
