@@ -1,18 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import {Link, withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import {toParty, getParty} from '../../ducks/partyReducer'
 
-const UserParty = (props) => {
+class UserParty extends Component {
+    constructor(props){
+        super()
+    }
 
+    handleClicks = (e) =>{
+        const partyid = this.props.character.partyid
+        this.props.toParty(partyid).then(()=> {
+            this.props.getParty()
+            this.props.history.push('/party/0')
+        })
+    }
+    render(props){
     return(
         <div className="displayChar">
-            <div className="charname">{props.character.charactername}</div>
-            <div className="charname">{props.character.characterchoice}</div>
-            <div>Party: {props.character.partyname}</div>
-            <Link to={`/party/${props.character.partyid}`}>Go</Link>
+            <div className="charname">{this.props.character.charactername}</div>
+            <div className="charname">{this.props.character.characterchoice}</div>
+            <div >Party: {this.props.character.partyname}</div>
+            <button onClick={() => {this.handleClicks()}}>Go</button>
         </div>
     )
-}
+}}
 const mapStateToProps = (reduxState) => reduxState
 
-export default connect(mapStateToProps)(UserParty)
+export default withRouter(connect(mapStateToProps, {toParty, getParty})(UserParty))
