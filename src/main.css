@@ -379,6 +379,7 @@
   color: #243624;
   font-weight: 700;
   border-radius: 8%;
+  font-size: 18px;
   padding: 1%;
   opacity: 85%;
   margin-right: 5%;
@@ -390,6 +391,7 @@
 }
 
 .displayChar {
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,5 +404,6 @@
   margin: 1vh;
   text-transform: uppercase;
   border-bottom: solid #3c291c;
+  margin-top: 2vh;
 }
 /*# sourceMappingURL=main.css.map */

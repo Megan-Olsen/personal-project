@@ -281,6 +281,7 @@ $color6: #a16b25;
     color: $color2;
     font-weight: 700;
     border-radius: 8%;
+    font-size: 18px;
     padding: 1%;
     opacity: 85%;
     margin-right: 5%;
@@ -289,10 +290,12 @@ $color6: #a16b25;
     align-self: center;
   }
   .displayChar {
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 1vh;
     text-transform: uppercase;
     border-bottom: solid $color4;
+    margin-top: 2vh;
   }
