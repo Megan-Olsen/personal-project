@@ -27,6 +27,13 @@ module.exports = {
         const characters = await db.user_characters([userid])
 
         res.status(200).send(characters)
+    },
+    deleteChar: async (req, res) => {
+        const db = req.app.get('db')
+        const {id} = req.params
+        await db.delete_char([id])
+
+        res.sendStatus(200)
     }
 
 

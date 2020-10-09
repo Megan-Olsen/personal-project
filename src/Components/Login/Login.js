@@ -59,7 +59,9 @@ class Login extends Component {
                                 here
                             </Link>
                         </p>
-                        <p>Forgot Password</p>
+                        <p><Link>
+                            Forgot Password
+                        </Link></p>
                     </div>
                 </div>
             </div>

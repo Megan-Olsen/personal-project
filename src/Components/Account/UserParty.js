@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import { withRouter } from 'react-router-dom';
 import {toParty, getParty} from '../../ducks/partyReducer'
+import axios from 'axios'
 
 class UserParty extends Component {
     constructor(props){
@@ -15,6 +16,12 @@ class UserParty extends Component {
             this.props.history.push('/party/0')
         })
     }
+    handleDeletes =(e) => {
+        const id = this.props.character.id
+        axios.delete(`/api/char/${id}`).then(() =>{
+            window.location.reload();}
+        )
+    }
     render(props){
     return(
         <div className="displayChar">
@@ -22,6 +29,7 @@ class UserParty extends Component {
             <div className="charname">{this.props.character.characterchoice}</div>
             <div >Party: {this.props.character.partyname}</div>
             <button onClick={() => {this.handleClicks()}}>Go</button>
+            <button onClick={() => {this.handleDeletes()}} className="deletes">Delete</button>
         </div>
     )
 }}

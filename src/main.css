@@ -174,7 +174,7 @@
   border-radius: 15%;
   padding: 1%;
   opacity: 85%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   padding: 2%;
@@ -187,7 +187,7 @@
   border-radius: 15%;
   padding: 1%;
   opacity: 85%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   padding: 2%;
@@ -374,7 +374,7 @@
 
 .characters {
   width: 25%;
-  height: 20vh;
+  height: 25vh;
   background-color: #a16b25;
   color: #243624;
   font-weight: 700;
@@ -404,7 +404,6 @@
   margin: 1vh;
   text-transform: uppercase;
   border-bottom: solid #3c291c;
-  margin-top: 2vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -419,5 +418,15 @@
   border-radius: 5vw;
   padding: 1vh;
   padding-top: 3vh;
+}
+
+.deletes {
+  background-color: #2d1e10;
+  color: #a16b25;
+  margin: 2px;
+  font-size: 16px;
+  font-family: "Ink Free";
+  font-weight: 700;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

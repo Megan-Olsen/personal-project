@@ -1,0 +1,1 @@
+DELETE FROM usersparties WHERE id = $1;

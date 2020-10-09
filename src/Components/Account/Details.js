@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
-import {withRouter} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import {getUser} from '../../ducks/authReducer';
 
 
@@ -34,7 +34,9 @@ class Details extends Component {
             }}>Update Username</button>
             <p>Email: {email}</p>
             <button onClick={()=> { this.props.toggleEditEmail()}}>Update Email</button>
-            <p>Click Here For Password Reset Email</p>
+            <p>Click <Link>
+                Here
+            </Link> For Password Reset Email</p>
 
             <br/>
             <button className="deleteAcc" onClick={()=> {this.handleDelete()}}>Delete Account</button>

@@ -134,7 +134,7 @@ $color6: #a16b25;
     border-radius: 15%;
     padding: 1%;
     opacity: 85%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding:2%;
@@ -146,7 +146,7 @@ $color6: #a16b25;
     border-radius: 15%;
     padding: 1%;
     opacity: 85%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding:2%;
@@ -276,7 +276,7 @@ $color6: #a16b25;
   }
   .characters {
     width: 25%;
-    height: 20vh;
+    height: 25vh;
     background-color: $color6;
     color: $color2;
     font-weight: 700;
@@ -297,7 +297,6 @@ $color6: #a16b25;
     margin: 1vh;
     text-transform: uppercase;
     border-bottom: solid $color4;
-    margin-top: 2vh;
     align-items: center;
   }
   .achievementsContainer {
@@ -310,3 +309,14 @@ $color6: #a16b25;
     padding: 1vh;
     padding-top: 3vh;
   }
+  .deletes {
+    background-color: $color5;
+    color: $color6;
+    margin: 2px;
+    font-size: 16px;
+    font-family: "Ink Free";
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+
