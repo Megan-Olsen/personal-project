@@ -10,7 +10,7 @@ import './App.css';
 function App(props) {
   return (
     <div className="App">
-     {props.location.pathname === '/' ? <Header/> : props.location.pathname === '/register' ? <Header/> : props.location.pathname === '/contact' ? <Header/> : <Nav/>}
+     {props.location.pathname === '/' ? <Header/> : props.location.pathname === '/register' ? <Header/> : props.location.pathname === '/contact' ? <Header/> : props.location.pathname === '/forgotpassword' ? <Header/> : props.location.pathname === '/resetpassword' ? <Header/> : <Nav/>}
      { routes }
     </div>
   );

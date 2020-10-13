@@ -5,6 +5,8 @@ import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
 import Party from './Components/Party/Party';
 import Register from './Components/Register/Register';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import ResetPassword from './Components/ForgotPassword/ResetPassword';
 
 
 export default (
@@ -14,6 +16,8 @@ export default (
         <Route path="/party/:partyid" component={Party} />
         <Route path="/contact" component={Contact} />
         <Route path="/account/:userid" component={Account} />
+        <Route path="/forgotpassword" component={ForgotPassword}/>
+        <Route path="/resetpassword/:token" component={ResetPassword}/>
         <Route render={() => <Redirect to= "/"/>} />
     </Switch>
 )

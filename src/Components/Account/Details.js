@@ -34,7 +34,7 @@ class Details extends Component {
             }}>Update Username</button>
             <p>Email: {email}</p>
             <button onClick={()=> { this.props.toggleEditEmail()}}>Update Email</button>
-            <p>Click <Link>
+            <p>Click <Link to='/forgotpassword'>
                 Here
             </Link> For Password Reset Email</p>
 

@@ -342,4 +342,25 @@ $color6: #a16b25;
     margin-top: 2vh;
     text-transform: uppercase;
   }
+  .passreset {
+    color: $color2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    font-weight: 700;
+  }
+  .inbetween {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    width: 30vh;
+    background-color: $color6;
+    border-radius: 15%;
+    opacity: 75%;
+  }
 

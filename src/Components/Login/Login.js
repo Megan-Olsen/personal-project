@@ -59,7 +59,7 @@ class Login extends Component {
                                 here
                             </Link>
                         </p>
-                        <p><Link>
+                        <p><Link to="/forgotpassword">
                             Forgot Password
                         </Link></p>
                     </div>
