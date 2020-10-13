@@ -49,7 +49,7 @@ class Form extends Component {
                     <label >Message: </label>
                     <textarea className="form-control" rows="8" id="message"></textarea>
                 </div>
-                <button type="submit" className="btn" onClick={()=> {this.resetForm()}}>Submit</button>
+                <button type="submit" className="btn">Submit</button>
                 </form>
 
 
