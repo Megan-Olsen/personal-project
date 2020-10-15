@@ -10,9 +10,9 @@ const charCtrl = require('./controllers/charController');
 const forCtrl = require('./controllers/forgotPassword');
 const resPass = require('./controllers/resetPassword');
 const up = require('./controllers/updatePasswordViaEmail');
-const { Router } = require('express');
 var nodemailer = require('nodemailer');
 const creds = require('./config/config');
+const path = require('path')
 
 
 const app = express()
@@ -59,6 +59,12 @@ app.put('/updatePasswordViaEmail', up.updatePass)
 
 
 
+app.use(express.static(__dirname + '/../build'))
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
+})
+
 massive({
     connectionString: CONNECTION_STRING,
     ssl: { rejectUnauthorized: false } 
@@ -67,7 +73,6 @@ massive({
     console.log('Database is working right now')
     app.listen(SERVER_PORT, () => console.log(`Running dungeon in door ${SERVER_PORT}`))
 }).catch(error => console.log('massive not functioning right'))
-
 
 
 var transport = {
