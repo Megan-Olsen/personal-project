@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 const loading = { margin: '1em', fontSize: '24px'};
 
-export default class ResetPassword extends Component {
-    constructor(){
-        super();
+ class ResetPassword extends Component {
+    constructor(props){
+        super(props);
         this.state = {
             email: '',
             password: '',
@@ -18,15 +18,11 @@ export default class ResetPassword extends Component {
         }
     }
     async componentDidMount(){
-        console.log(this.props.match.params.token);
+        let token = this.props.location.search
+        token = token.substring(1)
         await axios
-            .get('/reset', {
-                params: {
-                    resetToken: this.props.match.params.token
-                }
-            })
+            .post('/api/reset', {token})
             .then(response => {
-                console.log(response);
                 if (response.data.message === 'password reset link a-ok') {
                     this.setState({
                         email: response.data.email, 
@@ -46,9 +42,9 @@ export default class ResetPassword extends Component {
                 console.log(error.data)
             })
     }
-    handleChange = email => event => {
+    handleChange = password => event => {
         this.setState({
-            [email]: event.target.value,
+            [password]: event.target.value,
         })
     }
 
@@ -125,3 +121,4 @@ export default class ResetPassword extends Component {
 
 
 }
+export default withRouter(ResetPassword);

@@ -1,10 +1,11 @@
 const { default: userEvent } = require("@testing-library/user-event")
 
-module.exports = app => {
+module.exports = {
+    reset: async (req, res) =>{
     const db = req.app.get('db')
-    const [existingUser] = app.get('/reset', (req, res, next) => {
-        db.check_token([resetToken])
-    }).then( existingUser => {
+    const {token} = req.body
+    console.log('db', req.body)
+    const [existingUser] = await db.check_token([token])
     if(!existingUser) {
         console.log('password reset link is invalid or has expired')
         res.json('password reset link is invalid or has expired')
@@ -14,5 +15,5 @@ module.exports = app => {
             message: 'password reset link a-ok',
         })
     }
-    })
+    }
 }

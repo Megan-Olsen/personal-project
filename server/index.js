@@ -6,7 +6,10 @@ const authCtrl = require('./controllers/authController');
 const editCtrl = require('./controllers/editController');
 const verifyUser = require('./middlewares/verifyUser');
 const partCtrl = require('./controllers/partycontroller');
-const charCtrl = require('./controllers/charController')
+const charCtrl = require('./controllers/charController');
+const forCtrl = require('./controllers/forgotPassword');
+const resPass = require('./controllers/resetPassword');
+const up = require('./controllers/updatePasswordViaEmail');
 const { Router } = require('express');
 var nodemailer = require('nodemailer');
 const creds = require('./config/config');
@@ -49,7 +52,9 @@ app.post('/api/road', verifyUser, partCtrl.getRoad)
 app.post('/api/newcharacter', verifyUser, charCtrl.newChar)
 app.post('/api/partychar', charCtrl.partyChar)
 app.post('/api/userchar', charCtrl.userChar)
-
+app.post('/api/forgotPassword', forCtrl.forgotPass)
+app.post('/api/reset', resPass.reset)
+app.put('/updatePasswordViaEmail', up.updatePass)
 
 
 

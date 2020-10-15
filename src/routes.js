@@ -17,7 +17,6 @@ export default (
         <Route path="/contact" component={Contact} />
         <Route path="/account/:userid" component={Account} />
         <Route path="/forgotpassword" component={ForgotPassword}/>
-        <Route path="/resetpassword/:token" component={ResetPassword}/>
-        <Route render={() => <Redirect to= "/"/>} />
+        <Route path="/reset" component={ResetPassword}/>
     </Switch>
 )

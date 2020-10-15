@@ -9,7 +9,9 @@ class Nav extends Component {
     componentDidMount(){
         if (!this.props.isLoggedIn) {
             this.props.getUser().catch((err) => {
-                this.props.history.push('/')
+                if (!this.props.location === '/reset'){
+                    this.props.history.push('/')
+                }
             })
         }
         this.props.getUser()

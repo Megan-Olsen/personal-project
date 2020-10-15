@@ -1,11 +1,11 @@
-import crypto from 'crypto';
-const creds = require('./config/config');
+const crypto =  require('crypto');
+const creds = require('../config/config');
 
 const nodemailer = require('nodemailer');
-module.exports = (app) => {
-    app.post('/forgotPassword', (req, res) => {
+module.exports =  {
+    forgotPass: async (req, res) => {
         const db = req.app.get('db')
-        
+        const email = req.body.email
         if (req.body.email === '') {
             res.status(400).send('email required')
         }
@@ -33,7 +33,7 @@ module.exports = (app) => {
                 text: 
                     'You are receiving this because you (or someone else) have requested the reset of the password for your account. \n \n' 
                     + 'Please click on the following link, or paste this into your browser to complete the process withing one hour of receiving it: \n\n'
-                    +`http://localhost:3000/reset/${token} \n\n`
+                    +`http://localhost:3000/#/reset/?${token} \n\n`
                     +'If you did not request this, please ignore this email and your password will remain unchanged. \n'
             };
 
@@ -48,5 +48,5 @@ module.exports = (app) => {
                 }
             })
         }
-    })
+    }
 }
