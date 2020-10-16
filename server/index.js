@@ -12,7 +12,7 @@ const resPass = require('./controllers/resetPassword');
 const up = require('./controllers/updatePasswordViaEmail');
 var nodemailer = require('nodemailer');
 const creds = require('./config/config');
-const path = require('path')
+// const path = require('path')
 
 
 const app = express()
@@ -61,9 +61,9 @@ app.put('/updatePasswordViaEmail', up.updatePass)
 
 app.use(express.static(__dirname + '/../build'))
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../build/index.html'))
+// })
 
 massive({
     connectionString: CONNECTION_STRING,
