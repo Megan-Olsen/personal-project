@@ -4,8 +4,8 @@ import {getParty, getScenarios, getAchievements, getCity, getRoad} from '../../d
 import ScenariosContainer from './ScenariosContainer'
 import AchievementsContainer from './AchievementsContainer'
 import CharactersContainer from './CharactersContainer'
-import CityDeckContainer from './CityDeckContainer'
-import RoadDeckContainer from './RoadDeckContainer'
+// import CityDeckContainer from './CityDeckContainer'
+// import RoadDeckContainer from './RoadDeckContainer'
 
 class Party extends Component{
 

@@ -7,6 +7,7 @@ import {getUser} from '../../ducks/authReducer';
 
 
 class Details extends Component {
+    // eslint-disable-next-line
     constructor(props){
         super(props)
 

@@ -3,7 +3,7 @@ import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
 import {Link, withRouter} from 'react-router-dom';
 
-const loading = { margin: '1em', fontSize: '24px'};
+// const loading = { margin: '1em', fontSize: '24px'};
 
  class ResetPassword extends Component {
     constructor(props){
