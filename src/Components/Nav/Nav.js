@@ -31,7 +31,6 @@ class Nav extends Component {
     }
 
     render(){
-        console.log(this.props)
         const { username, userid } = this.props.auth.user
         return(
             <div className="nav-header">

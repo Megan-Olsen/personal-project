@@ -18,6 +18,7 @@ import {Link, withRouter} from 'react-router-dom';
         }
     }
     async componentDidMount(){
+        console.log('props', this.props.location)
         let token = this.props.location.search
         token = token.substring(1)
         await axios
