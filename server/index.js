@@ -22,7 +22,7 @@ const app = express();
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env
 
 app.use(express.json());
-app.use( express.static( `${__dirname}/../build` ) );
+app.use(express.static(`${__dirname}/../build`));
 app.use(session({
     secret: SESSION_SECRET,
     resave: false,
@@ -69,9 +69,9 @@ massive({
 }).then(dbInstance => {
     app.set('db', dbInstance)
     console.log('Database is working right now')
-    app.listen(SERVER_PORT, () => console.log(`Running dungeon in door ${SERVER_PORT}`))
 }).catch(error => console.log('massive not functioning right', error))
 
+app.listen(SERVER_PORT, () => console.log(`Running dungeon in door ${SERVER_PORT}`))
 
 var transport = {
     host: 'smtp.gmail.com',
