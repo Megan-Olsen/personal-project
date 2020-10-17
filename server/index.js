@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path')
 const express = require('express');
 const session = require('express-session');
 const massive = require('massive');
@@ -62,7 +63,6 @@ app.put('/updatePasswordViaEmail', up.updatePass)
 
 
 
-
 massive({
     connectionString: CONNECTION_STRING,
     ssl: { rejectUnauthorized: false } 
@@ -72,6 +72,10 @@ massive({
 }).catch(error => console.log('massive not functioning right', error))
 
 app.listen(SERVER_PORT, () => console.log(`Running dungeon in door ${SERVER_PORT}`))
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
+  })
 
 var transport = {
     host: 'smtp.gmail.com',
