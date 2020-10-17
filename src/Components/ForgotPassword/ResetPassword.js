@@ -21,8 +21,8 @@ import {Link, withRouter} from 'react-router-dom';
         let tokn = this.props.location.search
         const token = tokn.substring(1)
         await axios.post('/api/reset', {token})
-        console.log('token', token)
-            .then(response => {
+        .then(response => {
+            console.log('token', response)
                 if (response.data.message === 'password reset link a-ok') {
                     this.setState({
                         email: response.data.email, 
