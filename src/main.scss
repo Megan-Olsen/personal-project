@@ -80,7 +80,8 @@ $color6: #a16b25;
     background-color: $color6;
     border-radius: 15%;
     padding: 1%;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
   }
   .register {
     color: $color2;
@@ -134,7 +135,8 @@ $color6: #a16b25;
     background-color: $color6;
     border-radius: 15%;
     padding: 1%;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
@@ -146,7 +148,8 @@ $color6: #a16b25;
     background-color: $color6;
     border-radius: 15%;
     padding: 1%;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
@@ -243,7 +246,8 @@ $color6: #a16b25;
     font-weight: 700;
     border-radius: 8%;
     padding: 1%;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
     margin-right: 5%;
     padding:2%;
   }
@@ -263,7 +267,8 @@ $color6: #a16b25;
     justify-content: space-around;
     font-weight: 700;
     color: $color2;
-    opacity: 75%;
+    filter: alpha(opacity=75);
+    opacity: 0.75;
     padding-bottom: 2px;
   }
   .post-text {
@@ -284,7 +289,8 @@ $color6: #a16b25;
     border-radius: 8%;
     font-size: 18px;
     padding: 1%;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
     margin-right: 5%;
     position: absolute;
     right: 0;
@@ -304,7 +310,8 @@ $color6: #a16b25;
     color: $color2;
     font-weight: 700;
     background-color: $color6;
-    opacity: 85%;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
     width: 10vw;
     border-radius: 5vw;
     padding: 1vh;
@@ -362,6 +369,7 @@ $color6: #a16b25;
     width: 30vh;
     background-color: $color6;
     border-radius: 15%;
-    opacity: 75%;
+    filter: alpha(opacity=75);
+    opacity: 0.75;
   }
 

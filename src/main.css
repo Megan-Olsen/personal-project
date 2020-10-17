@@ -100,7 +100,8 @@
   background-color: #a16b25;
   border-radius: 15%;
   padding: 1%;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
 }
 
 .register {
@@ -174,7 +175,8 @@
   background-color: #a16b25;
   border-radius: 15%;
   padding: 1%;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
   margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
@@ -187,7 +189,8 @@
   background-color: #a16b25;
   border-radius: 15%;
   padding: 1%;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
   margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
@@ -328,7 +331,8 @@
   font-weight: 700;
   border-radius: 8%;
   padding: 1%;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
   margin-right: 5%;
   padding: 2%;
 }
@@ -353,7 +357,8 @@
       justify-content: space-around;
   font-weight: 700;
   color: #243624;
-  opacity: 75%;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
   padding-bottom: 2px;
 }
 
@@ -382,7 +387,8 @@
   border-radius: 8%;
   font-size: 18px;
   padding: 1%;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
   margin-right: 5%;
   position: absolute;
   right: 0;
@@ -415,7 +421,8 @@
   color: #243624;
   font-weight: 700;
   background-color: #a16b25;
-  opacity: 85%;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
   width: 10vw;
   border-radius: 5vw;
   padding: 1vh;
@@ -508,6 +515,7 @@
   width: 30vh;
   background-color: #a16b25;
   border-radius: 15%;
-  opacity: 75%;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
 }
 /*# sourceMappingURL=main.css.map */
