@@ -29,6 +29,8 @@
   height: 10%;
   text-align: left;
   background-color: #a16b25;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
   color: #243624;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
