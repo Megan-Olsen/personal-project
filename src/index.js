@@ -10,7 +10,7 @@ import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
+    <HashRouter history={hashHistory}>
       <App />
     </HashRouter>
   </Provider>,
