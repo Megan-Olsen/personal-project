@@ -70,7 +70,7 @@ massive({
     app.set('db', dbInstance)
     console.log('Database is working right now')
     app.listen(SERVER_PORT, () => console.log(`Running dungeon in door ${SERVER_PORT}`))
-}).catch(error => console.log('massive not functioning right'))
+}).catch(error => console.log('massive not functioning right', error))
 
 
 var transport = {
