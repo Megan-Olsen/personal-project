@@ -12,24 +12,23 @@ const resPass = require('./controllers/resetPassword');
 const up = require('./controllers/updatePasswordViaEmail');
 var nodemailer = require('nodemailer');
 const creds = require('./config/config');
-const path = require('path')
 
-const app = express()
 
-app.use( express.static( `${__dirname}/../build` ) );
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+const app = express();
+
+
+
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env
 
 app.use(express.json());
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(session({
-        secret: SESSION_SECRET,
-        resave: false,
-        saveUninitialized: true,
-        cookie: {maxAge: 1000 * 60 * 60 * 24 * 365}
-    })
+    secret: SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true,
+    cookie: {maxAge: 1000 * 60 * 60 * 24 * 365}
+})
 )
 
 
