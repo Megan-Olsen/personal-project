@@ -1,0 +1,538 @@
+[
+	{
+		"scenario": "scenario1",
+		"requirements": null,
+		"location": "Black Barrow",
+		"links": ["scenario2"],
+		"new-locations": ["scenario2"],
+		"treasure-chests": ["treasure07"],
+		"rewards": {
+			"party-achievements": ["first_steps"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario2",
+		"requirements": {
+			"first_steps": "complete"
+		},
+		"location": "Barrow Lair",
+		"links": ["scenario1"],
+		"new-locations": ["scenario3", "scenario4"],
+		"treasure-chests": ["treasure67"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": {
+				"prosperity": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario3",
+		"requirements": {
+			"the_merchant_flees": "incomplete"
+		},
+		"location": "Inox Encampment",
+		"links": null,
+		"new-locations": ["scenario8", "scenario9"],
+		"treasure-chests": ["treasure65"],
+		"rewards": {
+			"party-achievements": ["jekserah's_plans"],
+			"achievements": null,
+			"each": {
+				"gold": "+ 15"
+			},
+			"party": {
+				"prosperity": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario4",
+		"requirements": null,
+		"location": "Crypt of the Damned",
+		"links": null,
+		"new-locations": ["scenario5", "scenario6"],
+		"treasure-chests": ["treasure38", "treasure46"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario5",
+		"requirements": null,
+		"location": "Ruinous Crypt",
+		"links": ["scenario10"],
+		"new-locations": ["scenario10", "scenario14", "scenario19"],
+		"treasure-chests": ["treasure04", "treasure28"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario6",
+		"requirements": null,
+		"location": "Decaying Crypt",
+		"links": null,
+		"new-locations": ["scenario8"],
+		"treasure-chests": ["treasure50"],
+		"rewards": {
+			"party-achievements": ["jekserah's_plans", "dark_bounty"],
+			"achievements": null,
+			"each": {
+				"gold": "+ 5"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario7",
+		"requirements": {
+			"the_power_of_enhancement": "complete",
+			"the_merchant_flees": "complete"
+		},
+		"location": "Vibrant Grotto",
+		"links": null,
+		"new-locations": ["scenario20"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario8",
+		"requirements": {
+			"jekserah's_plans": "complete",
+			"the_dead_invade": "incomplete"
+		},
+		"location": "Gloomhaven Warehouse",
+		"links": "gloomhaven",
+		"new-locations": ["scenario7", "scenario13", "scenario14"],
+		"treasure-chests": ["treasure51"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_merchant_flees"],
+			"each": null,
+			"party": {
+				"reputation": "+ 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario9",
+		"requirements": {
+			"the_merchant_flees": "incomplete"
+		},
+		"location": "Diamond Mine",
+		"links": null,
+		"new-locations": ["scenario11", "scenario12"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_dead_invades"],
+			"each": {
+				"gold": "+ 20"
+			},
+			"party": {
+				"prosperity": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario10",
+		"requirements": {
+			"the_rift_neutralized": "incomplete"
+		},
+		"location": "Plane of Elemental Power",
+		"links": ["scenario5", "scenario21"],
+		"new-locations": ["scenario21", "scenario22"],
+		"treasure-chests": ["treasure11"],
+		"rewards": {
+			"party-achievements": ["a_demon's_errand"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario11",
+		"requirements": {
+			"end_of_the_invasion": "incomplete"
+		},
+		"location": "Gloomhaven Square A",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario16", "scenario18"],
+		"treasure-chests": ["treasure05"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["city_rule_economic", "end_of_the_invasion"],
+			"each": {
+				"gold": "+ 15"
+			},
+			"party": {
+				"prosperity": "+ 2",
+				"reputation": "- 2",
+				"item_design": "item113"
+			}
+		}
+	},
+	{
+		"scenario": "scenario12",
+		"requirements": {
+			"end_of_the_invasion": "incomplete"
+		},
+		"location": "Gloomhaven Square B",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario16", "scenario18", "scenario28"],
+		"treasure-chests": ["treasure34"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["end_of_the_invasion"],
+			"each": null,
+			"party": {
+				"reputation": "+ 4",
+				"item_design": "item113"
+			}
+		}
+	},
+	{
+		"scenario": "scenario13",
+		"requirements": null,
+		"location": "Temple of the Seer",
+		"links": null,
+		"new-locations": [],
+		"treasure-chests": ["treasure10"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"new_location": {
+					"pick_one": ["scenario15", "scenario17", "scenario20"]
+				}
+			}
+		}
+	},
+	{
+		"scenario": "scenario14",
+		"requirements": null,
+		"location": "Frozen Hollow",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure26"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_power_of_enhancement"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario15",
+		"requirements": null,
+		"location": "Shrine of Strength",
+		"links": null,
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"experience": "+ 20"
+			},
+			"party": {
+				"take_note": "Take note of the symbols for later"
+			}
+		}
+	},
+	{
+		"scenario": "scenario16",
+		"requirements": null,
+		"location": "Mountain Pass",
+		"links": ["scenario24"],
+		"new-locations": ["scenario24", "scenario25"],
+		"treasure-chests": ["treasure01"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario17",
+		"requirements": null,
+		"location": "Lost Island",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure71"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 25"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario18",
+		"requirements": null,
+		"location": "Abandoned Sewers",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario14", "scenario23", "scenario26", "scenario43"],
+		"treasure-chests": ["treasure63"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario19",
+		"requirements": {
+			"the_power_of_enhancement": "complete"
+		},
+		"location": "Forgotten Crypt",
+		"links": null,
+		"new-locations": ["scenario27"],
+		"treasure-chests": ["treasure17"],
+		"rewards": {
+			"party-achievements": ["stonebreaker's_censer"],
+			"achievements": null,
+			"each": null,
+			"party": {
+				"prosperity": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario20",
+		"requirements": {
+			"the_merchant_flees": "complete"
+		},
+		"location": "Necromancer's Sanctum",
+		"links": null,
+		"new-locations": ["scenario16", "scenario18", "scenario28"],
+		"treasure-chests": ["treasure60"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold":"+ 20"
+			},
+			"party": {
+				"prosperity": "+ 1",
+				"reputation": "+ 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario21",
+		"requirements": {
+			"the_rift_neutralized": "incomplete"
+		},
+		"location": "Infernal Throne",
+		"links": ["scenario10"],
+		"new-locations": null,
+		"treasure-chests": ["treasure15"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_rift_neutralized"],
+			"each": {
+				"gold": "+ 50"
+			},
+			"party": {
+				"prosperity": "+ 1",
+				"citydeck": "city78",
+				"artifact_lost_complete": "artifact_recovered"
+			}
+		}
+	},
+	{
+		"scenario": "scenario22",
+		"requirements": {
+			"or": {
+				"a_demon's_errand": "complete",
+				"following_clues": "complete"
+			}
+		},
+		"location": "Temple of the Elements",
+		"links": null,
+		"new-locations": ["scenario31", "scenario35", "scenario36"],
+		"treasure-chests": ["treasure21"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["artifact_recovered"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario23",
+		"requirements": null,
+		"location": "Deep Ruins",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure39", "treasure72"],
+		"rewards": {
+			"party-achievements": ["through_the_ruins"],
+			"achievements": ["ancient_technology"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario24",
+		"requirements": null,
+		"location": "Echo Chamber",
+		"links": ["scenario16"],
+		"new-locations": ["scenario30", "scenario32"],
+		"treasure-chests": ["treasure70"],
+		"rewards": {
+			"party-achievements": ["the_voice's_command"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario25",
+		"requirements": null,
+		"location": "Icecrag Ascent",
+		"links": ["scenario34"],
+		"new-locations": ["scenario33", "scenario34"],
+		"treasure-chests": ["treasure58"],
+		"rewards": {
+			"party-achievements": ["the_drake's_command"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario26",
+		"requirements": {
+			"or": {
+				"water-breathing": "complete",
+				"through_the_ruins": "complete"
+			}
+		},
+		"location": "Ancient Cistern",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario22"],
+		"treasure-chests": ["treasure66"],
+		"rewards": {
+			"party-achievements": ["following_clues"],
+			"achievements": null,
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": {
+				"prosperity": "+ 2",
+				"reputation": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario27",
+		"requirements": {
+			"artifact_lost": "incomplete",
+			"stonebreaker's_censer": "complete"
+		},
+		"location": "Ruinous Rift",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_rift_neutralized"],
+			"each": null,
+			"party": {
+				"prosperity": "+ 1",
+				"take_note": "Each player receives 100 gold that must be used immediately on enhancements (not tracked)"
+			}
+		}
+	},
+	{
+		"scenario": "scenario28",
+		"requirements": {
+			"dark_bounty": "complete"
+		},
+		"location": "Outer Ritual Chamber",
+		"links": ["scenario29"],
+		"new-locations": ["scenario29"],
+		"treasure-chests": ["treasure32"],
+		"rewards": {
+			"party-achievements": ["an_invitation"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario29",
+		"requirements": {
+			"an_invitation": "complete"
+		},
+		"location": "Sanctuary of Gloom",
+		"links": ["scenario28"],
+		"new-locations": null,
+		"treasure-chests": ["treasure41"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_edge_of_darkness"],
+			"each": {
+				"experience": "+ 15"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": null,
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": null,
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+
+	}
+]
