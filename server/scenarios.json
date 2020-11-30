@@ -919,7 +919,7 @@
 	{
 		"scenario": "scenario52",
 		"requirements": {
-			"personal_quest_complete": "seeker_of_xorn"
+			"personal_quest_active": "seeker_of_xorn"
 		},
 		"location": "Noxious Cellar",
 		"links": ["gloomhaven"],
@@ -935,12 +935,132 @@
 	{
 		"scenario": "scenario53",
 		"requirements": {
-			"personal_quest_complete": "seeker_of_xorn"
+			"personal_quest_active": "seeker_of_xorn"
 		},
 		"location": "Crypt Basement",
 		"links": null,
-		"new-locations": [],
-		"treasure-chests": [],
+		"new-locations": ["scenario54"],
+		"treasure-chests": ["treasure31"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"seeker_of_xorn": "item114"
+			}
+		}
+	},
+	{
+		"scenario": "scenario54",
+		"requirements": {
+			"personal_quest_active": "seeker_of_xorn",
+			"item_equipped": "item114"
+		},
+		"location": "Palace of Ice",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure25"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"personal_quest_complete": "seeker_of_xorn",
+				"retire": "seeker_of_xorn",
+				"citydeck": "city59",
+				"roaddeck": "road59",
+				"take_note": "City and Road Events 59 are added instead of normal retirement events for the class.",
+				"character_unlock": "harrower_plagueherald"
+			}
+		}
+	},
+	{
+		"scenario": "scenario55",
+		"requirements": {
+			"personal_quest_active": "take_back_the_trees"
+		},
+		"location": "Foggy Thicket",
+		"links": ["scenario56"],
+		"new-locations": ["scenario56"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"collective_gold": "+ 10"
+			}
+		}
+	},
+	{
+		"scenario": "scenario56",
+		"requirements": {
+			"personal_quest_active": "take_back_the_trees"
+		},
+		"location": "Bandit's Wood",
+		"links": ["scenario55"],
+		"new-locations": null,
+		"treasure-chests": ["treasure45"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": {
+				"reputation": "+ 2",
+				"personal_quest_complete": "take_back_the_trees",
+				"character_unlock": "orchid_doomstalker"
+			}
+		}
+	},
+	{
+		"scenario": "scenario57",
+		"requirements": {
+			"personal_quest_active": "vengeance"
+		},
+		"location": "Investigation",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario58"],
+		"treasure-chests": ["treasure03", "treasure22"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"reputation": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario58",
+		"requirements": {
+			"personal_quest_active": "vengeance"
+		},
+		"location": "Bloody Shack",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"personal_quest_complete": "vengeance",
+				"open_envelope": "x",
+				"reputation": "+ 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario59",
+		"requirements": {
+			"personal_quest_active": "finding_the_cure"
+		},
+		"location": "Forgotten Grove",
+		"links": null,
+		"new-locations": ["scenario60"],
+		"treasure-chests": null,
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
@@ -949,12 +1069,34 @@
 		}
 	},
 	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"scenario": "scenario60",
+		"requirements": {
+			"personal_quest_active": "finding_the_cure"
+		},
+		"location": "Alchemy Lab",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"prosperity": "+ 1",
+				"personal_quest_complete": "finding_the_cure",
+				"open_envelope": "x"
+			}
+		}
+	},
+	{
+		"scenario": "scenario61",
+		"requirements": {
+			"personal_quest_active": "the_fall_of_man"
+		},
+		"location": "Fading Lighthouse",
+		"links": ["scenario62"],
+		"new-locations": ["scenario62"],
+		"treasure-chests": null,
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
@@ -963,12 +1105,250 @@
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario62",
+		"requirements": {
+			"personal_quest_active": "the_fall_of_man"
+		},
+		"location": "Pit of Souls",
+		"links": ["scenario61"],
+		"new-locations": null,
+		"treasure-chests": ["treasure59"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"experience": "+ 10"
+			},
+			"party": {
+				"personal_quest_complete": "the_fall_of_man",
+				"character_unlock": "aesther_nightshroud"
+			}
+		}
+	},
+	{
+		"scenario": "scenario63",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Magma Pit",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure12"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 15"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario64",
+		"requirements": {
+			"water-breathing": "complete"
+		},
+		"location": "Underwater Lagoon",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure09"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"experience": "+ 10"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario65",
+		"requirements": null,
+		"location": "Sulfur Mine",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["ancient_technology"],
+			"each": null,
+			"party": {
+				"item_design": "item112"
+			}
+		}
+	},
+	{
+		"scenario": "scenario66",
+		"requirements": null,
+		"location": "Clockwork Cove",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure16", "treasure36"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["ancient_technology"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario67",
+		"requirements": null,
+		"location": "Arcane Library",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure14"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["ancient_technology"],
+			"each": null,
+			"party": {
+				"item_design": "item132"
+			}
+		}
+	},
+	{
+		"scenario": "scenario68",
+		"requirements": null,
+		"location": "Toxic Moor",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure33"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"receive_items": ["item027", "item027"]
+			}
+		}
+	},
+	{
+		"scenario": "scenario69",
+		"requirements": null,
+		"location": "Well of the Unfortunate",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 15"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario70",
+		"requirements": null,
+		"location": "Chained Isle",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure06"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"prosperity": "+ 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario71",
+		"requirements": null,
+		"location": "Windswept Highlands",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"receive_items": ["item041", "item041"]
+			}
+		}
+	},
+	{
+		"scenario": "scenario72",
+		"requirements": null,
+		"location": "Oozing Grove",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"prosperity": "+ 1",
+				"reputation": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario73",
+		"requirements": null,
+		"location": "Rockslide Ridge",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"reputation": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario74",
+		"requirements": {
+			"high_sea_escort": "complete"
+		},
+		"location": "Merchant Ship",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure20"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": {
+				"prosperity": "+ 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario75",
+		"requirements": {
+			"grave_job": "complete"
+		},
+		"location": "Overgrown Graveyard",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure53"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 60"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario76",
+		"requirements": {
+			"bravery": "achieved"
+		},
+		"location": "Harrower Hive",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure75"],
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
@@ -977,381 +1357,110 @@
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario77",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Vault of Secrets",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": null,
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
-			"each": null,
+			"each": {
+				"experience": "+ 5"
+			},
 			"party": null
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario78",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Sacrifice Pit",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": null,
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
 			"each": null,
+			"party": {
+				"reputation": "+ 3"
+			}
+		}
+	},
+	{
+		"scenario": "scenario79",
+		"requirements": {
+			"fish's_aid": "complete"
+		},
+		"location": "Lost Temple",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure52"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 15"
+			},
 			"party": null
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario80",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Vigil Keep",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
-			"each": null,
+			"each": {
+				"experience": "+ 10"
+			},
 			"party": null
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario81",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Temple of the Eclipse",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["goaltreasure1", "goaltreasure2", "treasure68"],
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
-			"each": null,
+			"each": {
+				"experience": "+ 10"
+			},
 			"party": null
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario82",
 		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
+		"location": "Burning Mountain",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure62"],
 		"rewards": {
 			"party-achievements": null,
 			"achievements": null,
 			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
-		}
-	},
-	{
-		"scenario": "",
-		"requirements": null,
-		"location": "",
-		"links": [],
-		"new-locations": [],
-		"treasure-chests": [],
-		"rewards": {
-			"party-achievements": null,
-			"achievements": null,
-			"each": null,
-			"party": null
+			"party": {
+				"conclusion_A": {
+					"display": "Conclusion A",
+					"remove_item_choice": ["item110", "item115"],
+					"reputation": "+ 1" 
+				},
+				"conclusion_B": {
+					"display": "Conclusion B",
+					"reputation": "- 1",
+					"prosperity": "- 2"
+				}
+			}
 		}
 	},
 	{
