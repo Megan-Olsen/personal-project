@@ -505,9 +505,439 @@
 		}
 	},
 	{
-		"scenario": "",
+		"scenario": "scenario30",
+		"requirements": {
+			"the_voice's_command": "complete"
+		},
+		"location": "Shrine of the Depths",
+		"links": null,
+		"new-locations": ["scenario42"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": ["the_scepter_and_the_voice"],
+			"achievements": null,
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario31",
+		"requirements": {
+			"the_power_of_enhancement": "complete",
+			"artifact_recovered": "complete"
+		},
+		"location": "Plane of Night",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario37", "scenario38", "scenario39", "scenario43"],
+		"treasure-chests": ["treasure69"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["artifact_cleansed"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario32",
+		"requirements": {
+			"the_voice's_command": "complete"
+		},
+		"location": "Decrepit Wood",
+		"links": null,
+		"new-locations": ["scenario33", "scenario40"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario33",
+		"requirements": {
+			"or": {
+				"the_voice's_command": "complete",
+				"the_drake's_command": "complete"
+			}
+		},
+		"location": "Savvas Armory",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": ["the_voice's_treasure", "the_drake's_treasure"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario34",
+		"requirements": {
+			"the_drake's_command": "complete",
+			"the_drake_aided": "incomplete"
+		},
+		"location": "Scorched Summit",
+		"links": ["scenario25"],
+		"new-locations": null,
+		"treasure-chests": ["treasure23"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_drake_slain"],
+			"each": {
+				"gold":"+ 20"
+			},
+			"party": {
+				"reputation": "+ 2",
+				"prosperity":"+ 1",
+				"lose_party_achievement": "the_drake's_command"
+			}
+		}
+	},
+	{
+		"scenario": "scenario35",
+		"requirements": {
+			"a_demon's_errand": "complete",
+			"the_rift_neutralized": "incomplete"
+		},
+		"location": "Gloomhaven Battlements A",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario45"],
+		"treasure-chests": ["treasure61"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["city_rule_demonic", "artifact_lose"],
+			"each": {
+				"gold": "+ 30"
+			},
+			"party": {
+				"prosperity": "- 2",
+				"reputation": "- 5",
+				"lose_party_achievement": "a_demon's_errand",
+				"citydeck": "city79"
+			}
+		}
+	},
+	{
+		"scenario": "scenario36",
+		"requirements": {
+			"a_demon's_errand": "complete",
+			"the_rift_neutralized": "incomplete"
+		},
+		"location": "Gloomhaven Battlements B",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure02"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_rift_neutralized"],
+			"each": {
+				"gold": "+ 10"
+			},
+			"party": {
+				"reputation": "+ 4",
+				"lose_party_achievement": "a_demon's_errand",
+				"citydeck": "city78"
+			}
+		}
+	},
+	{
+		"scenario": "scenario37",
+		"requirements": {
+			"water-breathing": "complete"
+		},
+		"location": "Doom Trench",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario47"],
+		"treasure-chests": ["treasure49"],
+		"rewards": {
+			"party-achievements": ["through_the_trench"],
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario38",
 		"requirements": null,
-		"location": "",
+		"location": "Slave Pens",
+		"links": ["scenario44"],
+		"new-locations": ["scenario44", "scenario48"],
+		"treasure-chests": ["treasure29"],
+		"rewards": {
+			"party-achievements": ["redthorn's_aid"],
+			"achievements": null,
+			"each": null,
+			"party": {
+				"reputation": "+ 1"
+			}
+		}
+	},
+	{
+		"scenario": "scenario39",
+		"requirements": null,
+		"location": "Treacherous Divide",
+		"links": ["scenario46"],
+		"new-locations": ["scenario15", "scenario46"],
+		"treasure-chests": ["treasure73"],
+		"rewards": {
+			"party-achievements": ["across_the_divide"],
+			"achievements": null,
+			"each": {
+				"experience": "+ 10"
+			},
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario40",
+		"requirements": {
+			"the_voice's_command": "complete",
+			"the_voice's_treasure": "complete"
+		},
+		"location": "Ancient Defense Network",
+		"links": ["scenario41"],
+		"new-locations": ["scenario41"],
+		"treasure-chests": ["treasure47"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["ancient_technology"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario41",
+		"requirements": {
+			"the_voice's_command": "complete"
+		},
+		"location": "Timeworn Tomb",
+		"links": ["scenario40"],
+		"new-locations": null,
+		"treasure-chests": ["treasure24"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_voice_freed"],
+			"each": {
+				"experience":"+ 25",
+				"gold":"+ 50",
+				"checks": "+ 2"
+			},
+			"party": {
+				"prosperity": "+ 2",
+				"take_note": "Take note of the symbols for later"
+			}
+		}
+	},
+	{
+		"scenario": "scenario42",
+		"requirements": {
+			"the_scepter_and_the_voice": "complete",
+			"the_voice_freed": "incomplete"
+		},
+		"location": "Realm of the Voice",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure30", "treasure55"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["the_voice_silenced"],
+			"each": null,
+			"party": {
+				"lose_party_achievement": "the_voice's_command",
+				"take_note": "Take note of the symbols for later"
+			}
+		}
+	},
+	{
+		"scenario": "scenario43",
+		"requirements": {
+			"the_power_of_enhancement": "complete"
+		},
+		"location": "Drake Nest",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure35"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["water-breathing"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario44",
+		"requirements": {
+			"redthorn's_aid": "complete"
+		},
+		"location": "Tribal Assault",
+		"links": ["scenario38"],
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": {
+				"reputation": "+ 2",
+				"character_unlock": "orchid_doomstalker"
+			}
+		}
+	},
+	{
+		"scenario": "scenario45",
+		"requirements": {
+			"city_rule_demonic": "complete"
+		},
+		"location": "Rebel Swamp",
+		"links": null,
+		"new-locations": ["scenario49", "scenario50"],
+		"treasure-chests": ["treasure74"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": {
+				"gold": "+ 20"
+			},
+			"party": {
+				"reputation": "- 2"
+			}
+		}
+	},
+	{
+		"scenario": "scenario46",
+		"requirements": {
+			"across_the_divide": "complete"
+		},
+		"location": "Nightmare Peak",
+		"links": ["scenario39"],
+		"new-locations": ["scenario51"],
+		"treasure-chests": ["treasure48"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["end_of_corruption"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario47",
+		"requirements": {
+			"through_the_trench": "complete"
+		},
+		"location": "Lair of the Unseeing Eye",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario51"],
+		"treasure-chests": ["treasure18", "treasure57"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["end_of_corruption"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario48",
+		"requirements": {
+			"redthorn's_aid": "complete"
+		},
+		"location": "Shadow Weald",
+		"links": null,
+		"new-locations": ["scenario51"],
+		"treasure-chests": ["treasure64"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["end_of_corruption"],
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario49",
+		"requirements": {
+			"city_rule_demonic": "complete"
+		},
+		"location": "Rebel's Stand",
+		"links": null,
+		"new-locations": null,
+		"treasure-chests": ["treasure44"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["annihilation_of_order"],
+			"each": {
+				"gold": "+ 50"
+			},
+			"party": {
+				"reputation": "- 3"
+			}
+		}
+	},
+	{
+		"scenario": "scenario50",
+		"requirements": {
+			"city_rule_demonic": "complete",
+			"annihilation_of_order": "incomplete"
+		},
+		"location": "Ghost Fortress",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["city_rule_militaristic"],
+			"each": null,
+			"party": {
+				"prosperity": "- 2",
+				"reputation": "+ 3"
+			}
+		}
+	},
+	{
+		"scenario": "scenario51",
+		"requirements": {
+			"end_of_corruption_3": "complete"
+		},
+		"location": "The Void",
+		"links": ["gloomhaven"],
+		"new-locations": null,
+		"treasure-chests": ["treasure56"],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": ["end_of_gloom"],
+			"each": null,
+			"party": {
+				"prosperity": "+ 5",
+				"reputation": "+ 5",
+				"citydeck": "city81",
+				"roaddeck": "road69"
+			}
+		}
+	},
+	{
+		"scenario": "scenario52",
+		"requirements": {
+			"personal_quest_complete": "seeker_of_xorn"
+		},
+		"location": "Noxious Cellar",
+		"links": ["gloomhaven"],
+		"new-locations": ["scenario53"],
+		"treasure-chests": null,
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "scenario53",
+		"requirements": {
+			"personal_quest_complete": "seeker_of_xorn"
+		},
+		"location": "Crypt Basement",
 		"links": null,
 		"new-locations": [],
 		"treasure-chests": [],
@@ -522,7 +952,7 @@
 		"scenario": "",
 		"requirements": null,
 		"location": "",
-		"links": null,
+		"links": [],
 		"new-locations": [],
 		"treasure-chests": [],
 		"rewards": {
@@ -533,6 +963,577 @@
 		}
 	},
 	{
-
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
+	},
+	{
+		"scenario": "",
+		"requirements": null,
+		"location": "",
+		"links": [],
+		"new-locations": [],
+		"treasure-chests": [],
+		"rewards": {
+			"party-achievements": null,
+			"achievements": null,
+			"each": null,
+			"party": null
+		}
 	}
 ]
